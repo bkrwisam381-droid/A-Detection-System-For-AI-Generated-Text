@@ -1,0 +1,33 @@
+AI Text Detector — Evaluation Summary
+============================================================
+
+DATASET
+  Total : 171,356
+  Train : 119,949
+  Val   : 25,703
+  Test  : 25,704
+  Sources: RAID, HC3, WildChat, Anthropic HH-RLHF, DAIGT, Wikipedia, arXiv
+
+MODEL ARCHITECTURE
+  Semantic     : DeBERTa-v3-large (400M, BF16, max_len=448)
+  Stylometric  : XGBoost (35 features, hist, n_estimators=1000)
+  Perplexity   : Binoculars (gpt2-large/gpt2-xl, Hans et al. 2024)
+  Genre        : DistilBERT 4-class (99.7% F1)
+  Fusion       : MLP 4→32→16→1 + isotonic calibration
+  DeBERTa clip : 0.99 (prevents calibration cliff)
+
+TEST SET PERFORMANCE
+  Signal               F1    AUC-ROC    Precision     Recall
+  --------------------------------------------------------
+  Ensemble         0.9514     0.9889       0.9541     0.9488
+  DeBERTa          0.9034     0.9822       0.8305     0.9904
+  XGBoost          0.8531     0.9366       0.8693     0.8375
+  Binoculars       0.4959     0.4444       0.4600     0.5377
+  Genre            0.6342     0.6395       0.5513     0.7464
+
+CONFUSION MATRIX
+  TP : 12,194  TN : 12,265  FP : 587  FN : 658
+  FP Rate : 4.57%
+  FN Rate : 5.12%
+
+FIGURES : E:\final_project\reports\eval_figures

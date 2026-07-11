@@ -1,0 +1,1181 @@
+2026-03-14 03:11:10,309 | INFO | =======================================================
+2026-03-14 03:11:10,310 | INFO | DeBERTa-v3-base Fine-tuning
+2026-03-14 03:11:10,310 | INFO | =======================================================
+2026-03-14 03:11:10,310 | WARNING | No GPU found -- training on CPU will be very slow!
+2026-03-14 03:11:10,342 | INFO | Loading data ...
+2026-03-14 03:11:10,897 | INFO | Train : 63968 rows (31984 human / 31984 AI)
+2026-03-14 03:11:10,897 | INFO | Val   : 13708 rows (6854 human / 6854 AI)
+2026-03-14 03:11:10,898 | INFO | Loading tokenizer: microsoft/deberta-v3-base ...
+2026-03-14 03:11:11,393 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 03:11:11,445 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 03:11:11,643 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 03:11:11,719 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-14 03:11:11,924 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-14 03:11:12,108 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-14 03:11:12,545 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 03:11:12,553 | INFO | Loading model: microsoft/deberta-v3-base ...
+2026-03-14 03:11:12,775 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 03:11:12,845 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 03:11:13,124 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 03:11:13,336 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/main "HTTP/1.1 200 OK"
+2026-03-14 03:11:13,565 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-14 03:11:13,775 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/refs%2Fpr%2F14 "HTTP/1.1 200 OK"
+2026-03-14 03:11:13,964 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-14 03:11:14,166 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors "HTTP/1.1 302 Found"
+2026-03-14 03:11:14,336 | INFO | Parameters: 184,423,682 total / 184,423,682 trainable
+2026-03-14 03:11:14,336 | INFO | Steps per epoch : 1999
+2026-03-14 03:11:14,336 | INFO | Total steps     : 9995
+2026-03-14 03:11:14,336 | INFO | Warmup steps    : 599
+2026-03-14 03:16:48,857 | INFO | =======================================================
+2026-03-14 03:16:48,857 | INFO | DeBERTa-v3-base Fine-tuning
+2026-03-14 03:16:48,857 | INFO | =======================================================
+2026-03-14 03:16:48,858 | WARNING | No GPU found -- training on CPU will be very slow!
+2026-03-14 03:16:48,859 | INFO | Loading data ...
+2026-03-14 03:16:49,420 | INFO | Train : 63968 rows (31984 human / 31984 AI)
+2026-03-14 03:16:49,420 | INFO | Val   : 13708 rows (6854 human / 6854 AI)
+2026-03-14 03:16:49,420 | INFO | Loading tokenizer: microsoft/deberta-v3-base ...
+2026-03-14 03:16:49,884 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 03:16:49,939 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 03:16:50,126 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 03:16:50,172 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-14 03:16:50,356 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-14 03:16:50,541 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-14 03:16:50,931 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 03:16:50,933 | INFO | Loading model: microsoft/deberta-v3-base ...
+2026-03-14 03:16:51,114 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 03:16:51,157 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 03:16:51,393 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 03:16:51,594 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/main "HTTP/1.1 200 OK"
+2026-03-14 03:16:51,795 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-14 03:16:51,996 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/refs%2Fpr%2F14 "HTTP/1.1 200 OK"
+2026-03-14 03:16:52,174 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-14 03:16:52,175 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-14 03:16:52,363 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors "HTTP/1.1 302 Found"
+2026-03-14 03:16:52,497 | INFO | Parameters: 184,423,682 total / 184,423,682 trainable
+2026-03-14 03:16:52,497 | INFO | Steps per epoch : 1999
+2026-03-14 03:16:52,498 | INFO | Total steps     : 9995
+2026-03-14 03:16:52,498 | INFO | Warmup steps    : 599
+2026-03-14 03:16:52,521 | INFO |  
+2026-03-14 03:16:52,521 | INFO | Starting training ...
+2026-03-14 03:16:52,521 | INFO | Estimated time on RTX 4060: ~3-4 hours
+2026-03-14 03:16:52,521 | INFO |  
+2026-03-14 03:23:16,119 | INFO | =======================================================
+2026-03-14 03:23:16,119 | INFO | DeBERTa-v3-base Fine-tuning
+2026-03-14 03:23:16,119 | INFO | =======================================================
+2026-03-14 03:23:16,120 | INFO | GPU : NVIDIA GeForce RTX 4060 Laptop GPU  (8.6 GB VRAM)
+2026-03-14 03:23:16,121 | INFO | Loading data ...
+2026-03-14 03:23:16,643 | INFO | Train : 63968 rows (31984 human / 31984 AI)
+2026-03-14 03:23:16,644 | INFO | Val   : 13708 rows (6854 human / 6854 AI)
+2026-03-14 03:23:16,644 | INFO | Loading tokenizer: microsoft/deberta-v3-base ...
+2026-03-14 03:23:17,132 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 03:23:17,182 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 03:23:17,377 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 03:23:17,421 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-14 03:23:17,609 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-14 03:23:17,792 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-14 03:23:18,276 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 03:23:18,284 | INFO | Loading model: microsoft/deberta-v3-base ...
+2026-03-14 03:23:18,466 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 03:23:18,506 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 03:23:18,728 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 03:23:18,933 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/main "HTTP/1.1 200 OK"
+2026-03-14 03:23:19,130 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-14 03:23:19,343 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/refs%2Fpr%2F14 "HTTP/1.1 200 OK"
+2026-03-14 03:23:19,526 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-14 03:23:19,713 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors "HTTP/1.1 302 Found"
+2026-03-14 03:23:19,853 | INFO | Parameters: 184,423,682 total / 184,423,682 trainable
+2026-03-14 03:23:19,853 | INFO | Steps per epoch : 1999
+2026-03-14 03:23:19,853 | INFO | Total steps     : 9995
+2026-03-14 03:23:19,853 | INFO | Warmup steps    : 599
+2026-03-14 03:23:20,317 | INFO |  
+2026-03-14 03:23:20,317 | INFO | Starting training ...
+2026-03-14 03:23:20,318 | INFO | Estimated time on RTX 4060: ~3-4 hours
+2026-03-14 03:23:20,318 | INFO |  
+2026-03-14 03:30:13,809 | INFO | =======================================================
+2026-03-14 03:30:13,809 | INFO | DeBERTa-v3-base Fine-tuning
+2026-03-14 03:30:13,809 | INFO | =======================================================
+2026-03-14 03:30:13,810 | INFO | GPU : NVIDIA GeForce RTX 4060 Laptop GPU  (8.6 GB VRAM)
+2026-03-14 03:30:13,812 | INFO | Loading data ...
+2026-03-14 03:30:14,329 | INFO | Train : 63968 rows (31984 human / 31984 AI)
+2026-03-14 03:30:14,330 | INFO | Val   : 13708 rows (6854 human / 6854 AI)
+2026-03-14 03:30:14,331 | INFO | Loading tokenizer: microsoft/deberta-v3-base ...
+2026-03-14 03:30:14,795 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 03:30:14,846 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 03:30:15,063 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 03:30:15,129 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-14 03:30:15,326 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-14 03:30:15,535 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-14 03:30:15,990 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 03:30:15,997 | INFO | Loading model: microsoft/deberta-v3-base ...
+2026-03-14 03:30:16,181 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 03:30:16,226 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 03:30:16,448 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 03:30:16,684 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/main "HTTP/1.1 200 OK"
+2026-03-14 03:30:16,886 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-14 03:30:17,107 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/refs%2Fpr%2F14 "HTTP/1.1 200 OK"
+2026-03-14 03:30:17,300 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-14 03:30:17,301 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-14 03:30:17,522 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors "HTTP/1.1 302 Found"
+2026-03-14 03:30:17,634 | INFO | Parameters: 184,423,682 total / 184,423,682 trainable
+2026-03-14 03:30:17,634 | INFO | Steps per epoch : 1999
+2026-03-14 03:30:17,635 | INFO | Total steps     : 9995
+2026-03-14 03:30:17,635 | INFO | Warmup steps    : 599
+2026-03-14 03:30:17,858 | INFO |  
+2026-03-14 03:30:17,859 | INFO | Starting training ...
+2026-03-14 03:30:17,859 | INFO | Estimated time on RTX 4060: ~3-4 hours
+2026-03-14 03:30:17,859 | INFO |  
+2026-03-14 03:34:02,622 | INFO | =======================================================
+2026-03-14 03:34:02,622 | INFO | DeBERTa-v3-base Fine-tuning
+2026-03-14 03:34:02,623 | INFO | =======================================================
+2026-03-14 03:34:02,624 | INFO | GPU : NVIDIA GeForce RTX 4060 Laptop GPU  (8.6 GB VRAM)
+2026-03-14 03:34:02,625 | INFO | Loading data ...
+2026-03-14 03:34:03,141 | INFO | Train : 63968 rows (31984 human / 31984 AI)
+2026-03-14 03:34:03,142 | INFO | Val   : 13708 rows (6854 human / 6854 AI)
+2026-03-14 03:34:03,142 | INFO | Loading tokenizer: microsoft/deberta-v3-base ...
+2026-03-14 03:34:03,593 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 03:34:03,636 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 03:34:03,815 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 03:34:03,857 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-14 03:34:04,044 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-14 03:34:04,259 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-14 03:34:04,709 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 03:34:04,715 | INFO | Loading model: microsoft/deberta-v3-base ...
+2026-03-14 03:34:04,893 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 03:34:04,936 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 03:34:05,159 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 03:34:05,359 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/main "HTTP/1.1 200 OK"
+2026-03-14 03:34:05,575 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-14 03:34:05,775 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/refs%2Fpr%2F14 "HTTP/1.1 200 OK"
+2026-03-14 03:34:05,959 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-14 03:34:06,150 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors "HTTP/1.1 302 Found"
+2026-03-14 03:34:06,260 | INFO | Parameters: 184,423,682 total / 184,423,682 trainable
+2026-03-14 03:34:06,260 | INFO | Steps per epoch : 1999
+2026-03-14 03:34:06,260 | INFO | Total steps     : 9995
+2026-03-14 03:34:06,260 | INFO | Warmup steps    : 599
+2026-03-14 03:34:06,473 | INFO |  
+2026-03-14 03:34:06,474 | INFO | Starting training ...
+2026-03-14 03:34:06,474 | INFO | Estimated time on RTX 4060: ~3-4 hours
+2026-03-14 03:34:06,474 | INFO |  
+2026-03-14 03:37:36,991 | INFO | =======================================================
+2026-03-14 03:37:36,991 | INFO | DeBERTa-v3-base Fine-tuning
+2026-03-14 03:37:36,991 | INFO | =======================================================
+2026-03-14 03:37:36,993 | INFO | GPU : NVIDIA GeForce RTX 4060 Laptop GPU  (8.6 GB VRAM)
+2026-03-14 03:37:36,994 | INFO | Loading data ...
+2026-03-14 03:37:37,521 | INFO | Train : 63968 rows (31984 human / 31984 AI)
+2026-03-14 03:37:37,523 | INFO | Val   : 13708 rows (6854 human / 6854 AI)
+2026-03-14 03:37:37,523 | INFO | Loading tokenizer: microsoft/deberta-v3-base ...
+2026-03-14 03:37:37,964 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 03:37:37,965 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-14 03:37:38,006 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 03:37:38,193 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 03:37:38,239 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-14 03:37:38,424 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-14 03:37:38,611 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-14 03:37:39,069 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 03:37:39,073 | INFO | Loading model: microsoft/deberta-v3-base ...
+2026-03-14 03:37:39,252 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 03:37:39,295 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 03:37:39,512 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 03:37:39,705 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/main "HTTP/1.1 200 OK"
+2026-03-14 03:37:39,902 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-14 03:37:40,101 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/refs%2Fpr%2F14 "HTTP/1.1 200 OK"
+2026-03-14 03:37:40,286 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-14 03:37:40,474 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors "HTTP/1.1 302 Found"
+2026-03-14 03:37:40,591 | INFO | Parameters: 184,423,682 total / 184,423,682 trainable
+2026-03-14 03:37:40,591 | INFO | Steps per epoch : 1999
+2026-03-14 03:37:40,591 | INFO | Total steps     : 9995
+2026-03-14 03:37:40,592 | INFO | Warmup steps    : 599
+2026-03-14 03:37:40,801 | INFO |  
+2026-03-14 03:37:40,801 | INFO | Starting training ...
+2026-03-14 03:37:40,802 | INFO | Estimated time on RTX 4060: ~3-4 hours
+2026-03-14 03:37:40,802 | INFO |  
+2026-03-14 03:56:19,578 | INFO | =======================================================
+2026-03-14 03:56:19,578 | INFO | DeBERTa-v3-base Fine-tuning
+2026-03-14 03:56:19,579 | INFO | =======================================================
+2026-03-14 03:56:19,580 | INFO | GPU : NVIDIA GeForce RTX 4060 Laptop GPU  (8.6 GB VRAM)
+2026-03-14 03:56:19,582 | INFO | Loading data ...
+2026-03-14 03:56:20,158 | INFO | ✅ Train labels: dtype=int32, unique=[0 1]
+2026-03-14 03:56:20,159 | INFO | ✅ Val labels:   dtype=int32, unique=[1 0]
+2026-03-14 03:56:20,160 | INFO | Train : 63968 rows (31984 human / 31984 AI)
+2026-03-14 03:56:20,160 | INFO | Val   : 13708 rows (6854 human / 6854 AI)
+2026-03-14 03:56:20,160 | INFO | Loading tokenizer: microsoft/deberta-v3-base ...
+2026-03-14 03:56:20,601 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 03:56:20,601 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-14 03:56:20,643 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 03:56:20,823 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 03:56:20,866 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-14 03:56:21,046 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-14 03:56:21,228 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-14 03:56:21,715 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 03:56:21,718 | INFO | Loading model: microsoft/deberta-v3-base ...
+2026-03-14 03:56:21,895 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 03:56:21,939 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 03:56:22,169 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 03:56:22,395 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/main "HTTP/1.1 200 OK"
+2026-03-14 03:56:22,589 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-14 03:56:22,787 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/refs%2Fpr%2F14 "HTTP/1.1 200 OK"
+2026-03-14 03:56:22,970 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-14 03:56:23,153 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors "HTTP/1.1 302 Found"
+2026-03-14 03:56:23,293 | INFO | Parameters: 184,423,682 total / 184,423,682 trainable
+2026-03-14 03:56:23,293 | INFO | Steps per epoch : 1999
+2026-03-14 03:56:23,293 | INFO | Total steps     : 9995
+2026-03-14 03:56:23,293 | INFO | Warmup steps    : 599
+2026-03-14 03:56:23,524 | INFO |  
+2026-03-14 03:56:23,525 | INFO | Starting training ...
+2026-03-14 03:56:23,525 | INFO | Estimated time on RTX 4060: ~3-4 hours
+2026-03-14 03:56:23,525 | INFO |  
+2026-03-14 03:58:32,413 | INFO | =======================================================
+2026-03-14 03:58:32,413 | INFO | DeBERTa-v3-base Fine-tuning
+2026-03-14 03:58:32,413 | INFO | =======================================================
+2026-03-14 03:58:32,415 | INFO | GPU : NVIDIA GeForce RTX 4060 Laptop GPU  (8.6 GB VRAM)
+2026-03-14 03:58:32,416 | INFO | Loading data ...
+2026-03-14 03:58:32,929 | INFO | ✅ Train labels: dtype=int32, unique=[0 1]
+2026-03-14 03:58:32,930 | INFO | ✅ Val labels:   dtype=int32, unique=[1 0]
+2026-03-14 03:58:32,930 | INFO | Train : 63968 rows (31984 human / 31984 AI)
+2026-03-14 03:58:32,930 | INFO | Val   : 13708 rows (6854 human / 6854 AI)
+2026-03-14 03:58:32,931 | INFO | Loading tokenizer: microsoft/deberta-v3-base ...
+2026-03-14 03:58:33,396 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 03:58:33,398 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-14 03:58:33,439 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 03:58:33,620 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 03:58:33,663 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-14 03:58:33,847 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-14 03:58:34,035 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-14 03:58:34,493 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 03:58:34,499 | INFO | Loading model: microsoft/deberta-v3-base ...
+2026-03-14 03:58:34,674 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 03:58:34,718 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 03:58:34,940 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 03:58:35,143 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/main "HTTP/1.1 200 OK"
+2026-03-14 03:58:35,342 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-14 03:58:35,542 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/refs%2Fpr%2F14 "HTTP/1.1 200 OK"
+2026-03-14 03:58:35,723 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-14 03:58:35,912 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors "HTTP/1.1 302 Found"
+2026-03-14 03:58:36,024 | INFO | Parameters: 184,423,682 total / 184,423,682 trainable
+2026-03-14 03:58:36,024 | INFO | Steps per epoch : 1999
+2026-03-14 03:58:36,024 | INFO | Total steps     : 9995
+2026-03-14 03:58:36,025 | INFO | Warmup steps    : 599
+2026-03-14 03:58:36,243 | INFO |  
+2026-03-14 03:58:36,244 | INFO | Starting training ...
+2026-03-14 03:58:36,244 | INFO | Estimated time on RTX 4060: ~3-4 hours
+2026-03-14 03:58:36,244 | INFO |  
+2026-03-14 04:05:54,848 | INFO | =======================================================
+2026-03-14 04:05:54,848 | INFO | DeBERTa-v3-base Fine-tuning
+2026-03-14 04:05:54,848 | INFO | =======================================================
+2026-03-14 04:05:54,850 | INFO | GPU : NVIDIA GeForce RTX 4060 Laptop GPU  (8.6 GB VRAM)
+2026-03-14 04:05:54,851 | INFO | Loading data ...
+2026-03-14 04:05:55,364 | INFO | ✅ Train labels: dtype=int32, unique=[0 1]
+2026-03-14 04:05:55,364 | INFO | ✅ Val labels:   dtype=int32, unique=[1 0]
+2026-03-14 04:05:55,365 | INFO | Train : 63968 rows (31984 human / 31984 AI)
+2026-03-14 04:05:55,365 | INFO | Val   : 13708 rows (6854 human / 6854 AI)
+2026-03-14 04:05:55,365 | INFO | Loading tokenizer: microsoft/deberta-v3-base ...
+2026-03-14 04:05:55,873 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 04:05:55,921 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 04:05:56,103 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 04:05:56,192 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-14 04:05:56,393 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-14 04:05:56,592 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-14 04:05:57,052 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 04:05:57,059 | INFO | Loading model: microsoft/deberta-v3-base ...
+2026-03-14 04:05:57,247 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 04:05:57,249 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-14 04:05:57,323 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 04:05:57,554 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 04:05:57,754 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/main "HTTP/1.1 200 OK"
+2026-03-14 04:05:57,955 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-14 04:05:58,158 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/refs%2Fpr%2F14 "HTTP/1.1 200 OK"
+2026-03-14 04:05:58,360 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-14 04:05:58,549 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors "HTTP/1.1 302 Found"
+2026-03-14 04:05:58,659 | INFO | Parameters: 184,423,682 total / 184,423,682 trainable
+2026-03-14 04:05:58,659 | INFO | Steps per epoch : 1999
+2026-03-14 04:05:58,660 | INFO | Total steps     : 9995
+2026-03-14 04:05:58,660 | INFO | Warmup steps    : 599
+2026-03-14 04:05:58,882 | INFO |  
+2026-03-14 04:05:58,882 | INFO | Starting training ...
+2026-03-14 04:05:58,883 | INFO | Estimated time on RTX 4060: ~3-4 hours
+2026-03-14 04:05:58,883 | INFO |  
+2026-03-14 04:10:06,432 | INFO | =======================================================
+2026-03-14 04:10:06,432 | INFO | DeBERTa-v3-base Fine-tuning (FAST VERSION)
+2026-03-14 04:10:06,432 | INFO | =======================================================
+2026-03-14 04:10:06,433 | INFO | GPU : NVIDIA GeForce RTX 4060 Laptop GPU  (8.6 GB VRAM)
+2026-03-14 04:10:06,435 | INFO | Loading data ...
+2026-03-14 04:10:07,026 | INFO | ✅ Train labels: dtype=int32, unique=[0 1]
+2026-03-14 04:10:07,026 | INFO | ✅ Val labels:   dtype=int32, unique=[1 0]
+2026-03-14 04:10:07,027 | INFO | Train : 63968 rows (31984 human / 31984 AI)
+2026-03-14 04:10:07,027 | INFO | Val   : 13708 rows (6854 human / 6854 AI)
+2026-03-14 04:10:07,027 | INFO | Loading tokenizer: microsoft/deberta-v3-base ...
+2026-03-14 04:10:07,502 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 04:10:07,549 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 04:10:07,742 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 04:10:07,790 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-14 04:10:07,981 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-14 04:10:08,169 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-14 04:10:08,661 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 04:10:08,662 | INFO | Pre-tokenizing 63968 texts...
+2026-03-14 04:10:18,966 | INFO | Pre-tokenizing 13708 texts...
+2026-03-14 04:10:20,734 | INFO | Loading model: microsoft/deberta-v3-base ...
+2026-03-14 04:10:20,999 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 04:10:21,047 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 04:10:21,297 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 04:10:21,503 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/main "HTTP/1.1 200 OK"
+2026-03-14 04:10:21,705 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-14 04:10:21,900 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/refs%2Fpr%2F14 "HTTP/1.1 200 OK"
+2026-03-14 04:10:22,083 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-14 04:10:22,272 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors "HTTP/1.1 302 Found"
+2026-03-14 04:10:22,455 | INFO | Parameters: 184,423,682 total / 184,423,682 trainable
+2026-03-14 04:10:22,456 | INFO | Steps per epoch : 1999
+2026-03-14 04:10:22,456 | INFO | Total steps     : 9995
+2026-03-14 04:10:22,456 | INFO | Warmup steps    : 599
+2026-03-14 04:10:23,082 | INFO |  
+2026-03-14 04:10:23,083 | INFO | Starting training ...
+2026-03-14 04:10:23,083 | INFO | Estimated time on RTX 4060: ~3-4 hours
+2026-03-14 04:10:23,083 | INFO |  
+2026-03-14 04:13:48,301 | INFO | =======================================================
+2026-03-14 04:13:48,302 | INFO | DeBERTa-v3-base Fine-tuning (FAST VERSION)
+2026-03-14 04:13:48,302 | INFO | =======================================================
+2026-03-14 04:13:48,303 | INFO | GPU : NVIDIA GeForce RTX 4060 Laptop GPU  (8.6 GB VRAM)
+2026-03-14 04:13:48,305 | INFO | Loading data ...
+2026-03-14 04:13:48,823 | INFO | Train : 63968 rows (31984 human / 31984 AI)
+2026-03-14 04:13:48,824 | INFO | Val   : 13708 rows (6854 human / 6854 AI)
+2026-03-14 04:13:48,824 | INFO | Loading tokenizer: microsoft/deberta-v3-base ...
+2026-03-14 04:13:49,310 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 04:13:49,356 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 04:13:49,553 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 04:13:49,599 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-14 04:13:49,794 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-14 04:13:49,979 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-14 04:13:50,459 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 04:13:50,462 | INFO | Pre-tokenizing 63968 texts...
+2026-03-14 04:13:58,867 | INFO | Pre-tokenizing 13708 texts...
+2026-03-14 04:14:00,088 | INFO | Loading model: microsoft/deberta-v3-base ...
+2026-03-14 04:14:00,371 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 04:14:00,373 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-14 04:14:00,417 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 04:14:00,640 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 04:14:00,847 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/main "HTTP/1.1 200 OK"
+2026-03-14 04:14:01,047 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-14 04:14:01,258 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/refs%2Fpr%2F14 "HTTP/1.1 200 OK"
+2026-03-14 04:14:01,447 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-14 04:14:01,630 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors "HTTP/1.1 302 Found"
+2026-03-14 04:14:01,765 | INFO | Parameters: 184,423,682 total / 184,423,682 trainable
+2026-03-14 04:14:01,765 | INFO | Steps per epoch : 2665
+2026-03-14 04:14:01,765 | INFO | Total steps     : 13325
+2026-03-14 04:14:01,765 | INFO | Warmup steps    : 799
+2026-03-14 04:14:02,221 | INFO |  
+2026-03-14 04:14:02,222 | INFO | Starting training ...
+2026-03-14 04:14:02,222 | INFO | Estimated time on RTX 4060: ~2-3 hours
+2026-03-14 04:14:02,222 | INFO |  
+2026-03-14 13:24:58,354 | INFO | =======================================================
+2026-03-14 13:24:58,354 | INFO | DeBERTa-v3-base Fine-tuning (FAST VERSION)
+2026-03-14 13:24:58,354 | INFO | =======================================================
+2026-03-14 13:24:58,370 | INFO | GPU : NVIDIA GeForce RTX 4060 Laptop GPU  (8.6 GB VRAM)
+2026-03-14 13:24:58,391 | INFO | Loading data ...
+2026-03-14 13:24:58,958 | INFO | Train : 63968 rows (31984 human / 31984 AI)
+2026-03-14 13:24:58,958 | INFO | Val   : 13708 rows (6854 human / 6854 AI)
+2026-03-14 13:24:58,958 | INFO | Loading tokenizer: microsoft/deberta-v3-base ...
+2026-03-14 13:24:59,443 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 13:24:59,491 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 13:24:59,690 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 13:24:59,690 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-14 13:24:59,736 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-14 13:24:59,948 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-14 13:25:00,132 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-14 13:25:00,679 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 13:25:00,679 | INFO | Pre-tokenizing 63968 texts...
+2026-03-14 13:25:07,049 | INFO | Pre-tokenizing 13708 texts...
+2026-03-14 13:25:08,290 | INFO | Loading model: microsoft/deberta-v3-base ...
+2026-03-14 13:25:08,570 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 13:25:08,623 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 13:25:08,874 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 13:25:09,087 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/main "HTTP/1.1 200 OK"
+2026-03-14 13:25:09,304 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-14 13:25:09,519 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/refs%2Fpr%2F14 "HTTP/1.1 200 OK"
+2026-03-14 13:25:09,714 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-14 13:25:09,892 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors "HTTP/1.1 302 Found"
+2026-03-14 13:25:10,096 | INFO | Parameters: 184,423,682 total / 184,423,682 trainable
+2026-03-14 13:25:10,097 | INFO | Steps per epoch : 1999
+2026-03-14 13:25:10,097 | INFO | Total steps     : 9995
+2026-03-14 13:25:10,097 | INFO | Warmup steps    : 999
+2026-03-14 13:25:10,566 | INFO |  
+2026-03-14 13:25:10,566 | INFO | Starting training ...
+2026-03-14 13:25:10,566 | INFO | Estimated time on RTX 4060: ~2-3 hours
+2026-03-14 13:25:10,566 | INFO |  
+2026-03-14 13:38:50,394 | INFO | =======================================================
+2026-03-14 13:38:50,394 | INFO | DeBERTa-v3-base Fine-tuning (FAST VERSION)
+2026-03-14 13:38:50,395 | INFO | =======================================================
+2026-03-14 13:38:50,396 | INFO | GPU : NVIDIA GeForce RTX 4060 Laptop GPU  (8.6 GB VRAM)
+2026-03-14 13:38:50,476 | INFO | Loading data ...
+2026-03-14 13:38:51,037 | INFO | Train : 63968 rows (31984 human / 31984 AI)
+2026-03-14 13:38:51,037 | INFO | Val   : 13708 rows (6854 human / 6854 AI)
+2026-03-14 13:38:51,037 | INFO | Loading tokenizer: microsoft/deberta-v3-base ...
+2026-03-14 13:38:51,981 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 13:38:51,982 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-14 13:38:52,088 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 13:38:52,321 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 13:38:52,501 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-14 13:38:52,726 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-14 13:38:53,036 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-14 13:38:53,581 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 13:38:53,581 | INFO | Pre-tokenizing 63968 texts...
+2026-03-14 13:39:00,130 | INFO | Pre-tokenizing 13708 texts...
+2026-03-14 13:39:01,287 | INFO | Loading model: microsoft/deberta-v3-base ...
+2026-03-14 13:39:01,567 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 13:39:01,623 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 13:39:01,850 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 13:39:02,061 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/main "HTTP/1.1 200 OK"
+2026-03-14 13:39:02,259 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-14 13:39:02,455 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/refs%2Fpr%2F14 "HTTP/1.1 200 OK"
+2026-03-14 13:39:02,651 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-14 13:39:02,837 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors "HTTP/1.1 302 Found"
+2026-03-14 13:39:03,094 | INFO | Parameters: 184,423,682 total / 184,423,682 trainable
+2026-03-14 13:39:03,094 | INFO | Steps per epoch : 1999
+2026-03-14 13:39:03,094 | INFO | Total steps     : 9995
+2026-03-14 13:39:03,094 | INFO | Warmup steps    : 999
+2026-03-14 13:39:03,546 | INFO |  
+2026-03-14 13:39:03,546 | INFO | Starting training ...
+2026-03-14 13:39:03,546 | INFO | Estimated time on RTX 4060: ~2-3 hours
+2026-03-14 13:39:03,546 | INFO |  
+2026-03-14 13:45:18,663 | INFO | =======================================================
+2026-03-14 13:45:18,663 | INFO | GPU: NVIDIA GeForce RTX 4060 Laptop GPU
+2026-03-14 13:45:18,663 | INFO | VRAM: 8.6 GB
+2026-03-14 13:45:18,663 | INFO | CUDA Version: 11.8
+2026-03-14 13:45:18,663 | INFO | PyTorch Version: 2.7.1+cu118
+2026-03-14 13:45:18,663 | INFO | =======================================================
+2026-03-14 13:45:18,663 | INFO | =======================================================
+2026-03-14 13:45:18,663 | INFO | DeBERTa-v3-base Fine-tuning (RTX 4060 OPTIMIZED)
+2026-03-14 13:45:18,663 | INFO | Config: batch=4, accumulation=8, effective_batch=32
+2026-03-14 13:45:18,663 | INFO | Precision: FP32 (DeBERTa stability requirement)
+2026-03-14 13:45:18,663 | INFO | Gradient Checkpointing: ENABLED (use_reentrant=True)
+2026-03-14 13:45:18,663 | INFO | =======================================================
+2026-03-14 13:45:18,673 | INFO | Loading data ...
+2026-03-14 13:45:19,434 | INFO | Train: 63968 rows (human=31984, AI=31984)
+2026-03-14 13:45:19,434 | INFO | Val:   13708 rows (human=6854, AI=6854)
+2026-03-14 13:45:19,434 | INFO | Loading tokenizer: microsoft/deberta-v3-base ...
+2026-03-14 13:45:19,891 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 13:45:19,891 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-14 13:45:19,952 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 13:45:20,132 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 13:45:20,191 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-14 13:45:20,389 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-14 13:45:20,572 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-14 13:45:21,275 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 13:45:21,275 | INFO | Pre-tokenizing 63968 texts for 'unknown'...
+2026-03-14 13:45:30,387 | INFO | Pre-tokenization complete. Sample length: 138 tokens
+2026-03-14 13:45:33,152 | INFO | Pre-tokenizing 13708 texts for 'unknown'...
+2026-03-14 13:45:34,205 | INFO | Pre-tokenization complete. Sample length: 75 tokens
+2026-03-14 13:45:34,397 | INFO | Loading model: microsoft/deberta-v3-base ...
+2026-03-14 13:45:34,422 | INFO | Attempting to use Flash Attention 2...
+2026-03-14 13:45:34,722 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 13:45:34,786 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 13:45:35,018 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 13:45:35,229 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/main "HTTP/1.1 200 OK"
+2026-03-14 13:45:35,483 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-14 13:45:35,696 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/refs%2Fpr%2F14 "HTTP/1.1 200 OK"
+2026-03-14 13:45:35,891 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-14 13:45:36,122 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors "HTTP/1.1 302 Found"
+2026-03-14 13:45:36,138 | WARNING | Failed to load with flash_attention_2 attention: DebertaV2ForSequenceClassification does not support Flash Attention 2.0 yet. Please request to add support where the model is hosted, on its model hub page: https://huggingface.co/microsoft/deberta-v3-base/discussions/new or in the Transformers GitHub repo: https://github.com/huggingface/transformers/issues/new
+2026-03-14 13:45:36,138 | INFO | Falling back to standard attention...
+2026-03-14 13:45:36,318 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 13:45:36,387 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 13:45:36,576 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 13:45:36,789 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/main "HTTP/1.1 200 OK"
+2026-03-14 13:45:36,995 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-14 13:45:37,222 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/refs%2Fpr%2F14 "HTTP/1.1 200 OK"
+2026-03-14 13:45:37,432 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-14 13:45:38,003 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors "HTTP/1.1 302 Found"
+2026-03-14 13:45:40,171 | INFO | Parameters: 184,423,682 total / 184,423,682 trainable
+2026-03-14 13:45:40,171 | INFO | Training schedule:
+2026-03-14 13:45:40,171 | INFO |   Steps per epoch: 1999
+2026-03-14 13:45:40,171 | INFO |   Total steps:     9995
+2026-03-14 13:45:40,171 | INFO |   Warmup steps:    999
+2026-03-14 13:45:40,171 | INFO |   Eval steps:      500
+2026-03-14 13:45:42,052 | INFO |  
+2026-03-14 13:45:42,052 | INFO | Starting training...
+2026-03-14 13:45:42,068 | INFO | Expected time on RTX 4060: ~6-10 hours for 5 epochs
+2026-03-14 13:45:42,068 | INFO | Speed should be ~2-4s/it (not 40s/it!)
+2026-03-14 13:45:42,068 | INFO |  
+2026-03-14 13:45:42,068 | INFO | VRAM before training: 0.74 GB allocated
+2026-03-14 13:49:05,702 | INFO | =======================================================
+2026-03-14 13:49:05,702 | INFO | GPU: NVIDIA GeForce RTX 4060 Laptop GPU
+2026-03-14 13:49:05,702 | INFO | VRAM: 8.6 GB
+2026-03-14 13:49:05,702 | INFO | CUDA Version: 11.8
+2026-03-14 13:49:05,702 | INFO | PyTorch Version: 2.7.1+cu118
+2026-03-14 13:49:05,702 | INFO | =======================================================
+2026-03-14 13:49:05,702 | INFO | =======================================================
+2026-03-14 13:49:05,702 | INFO | DeBERTa-v3-base Fine-tuning (STABLE - NO CHECKPOINTING)
+2026-03-14 13:49:05,702 | INFO | Config: batch=2, accumulation=16, effective_batch=32, max_len=384
+2026-03-14 13:49:05,702 | INFO | Precision: FP32 | Gradient Checkpointing: DISABLED (avoids backward error)
+2026-03-14 13:49:05,702 | INFO | =======================================================
+2026-03-14 13:49:05,702 | INFO | Loading data ...
+2026-03-14 13:49:06,260 | INFO | Train: 63968 rows (human=31984, AI=31984)
+2026-03-14 13:49:06,260 | INFO | Val:   13708 rows (human=6854, AI=6854)
+2026-03-14 13:49:06,260 | INFO | Loading tokenizer: microsoft/deberta-v3-base ...
+2026-03-14 13:49:06,711 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 13:49:06,711 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-14 13:49:06,761 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 13:49:06,941 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 13:49:06,989 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-14 13:49:07,160 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-14 13:49:07,341 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-14 13:49:07,812 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 13:49:07,812 | INFO | Pre-tokenizing 63968 texts (max_length=384)...
+2026-03-14 13:49:11,501 | INFO | Tokenization complete. Avg length: 184, Max: 384
+2026-03-14 13:49:14,142 | INFO | Pre-tokenizing 13708 texts (max_length=384)...
+2026-03-14 13:49:15,154 | INFO | Tokenization complete. Avg length: 185, Max: 384
+2026-03-14 13:49:15,327 | INFO | Loading model: microsoft/deberta-v3-base ...
+2026-03-14 13:49:15,598 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 13:49:15,644 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 13:49:15,866 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 13:49:16,066 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/main "HTTP/1.1 200 OK"
+2026-03-14 13:49:16,260 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-14 13:49:16,465 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/refs%2Fpr%2F14 "HTTP/1.1 200 OK"
+2026-03-14 13:49:16,657 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-14 13:49:16,851 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors "HTTP/1.1 302 Found"
+2026-03-14 13:49:17,064 | INFO | Parameters: 184,423,682 total / 184,423,682 trainable
+2026-03-14 13:49:17,064 | INFO | Training schedule:
+2026-03-14 13:49:17,064 | INFO |   Steps per epoch: 1999
+2026-03-14 13:49:17,064 | INFO |   Total steps:     9995
+2026-03-14 13:49:17,064 | INFO |   Warmup steps:    999
+2026-03-14 13:49:17,379 | INFO |  
+2026-03-14 13:49:17,379 | INFO | Starting training...
+2026-03-14 13:49:17,379 | INFO | Expected: ~2-5s/it, ~8-12 hours total
+2026-03-14 13:49:17,379 | INFO |  
+2026-03-14 13:49:17,379 | INFO | VRAM before training: 0.74 GB allocated
+2026-03-14 13:57:22,460 | INFO | =======================================================
+2026-03-14 13:57:22,460 | INFO | GPU: NVIDIA GeForce RTX 4060 Laptop GPU
+2026-03-14 13:57:22,460 | INFO | VRAM: 8.6 GB
+2026-03-14 13:57:22,460 | INFO | CUDA Version: 11.8
+2026-03-14 13:57:22,460 | INFO | PyTorch Version: 2.7.1+cu118
+2026-03-14 13:57:22,460 | INFO | =======================================================
+2026-03-14 13:57:22,460 | INFO | =======================================================
+2026-03-14 13:57:22,460 | INFO | DeBERTa-v3-base Fine-tuning (STABLE - NO CHECKPOINTING)
+2026-03-14 13:57:22,460 | INFO | Config: batch=2, accumulation=16, effective_batch=32, max_len=384
+2026-03-14 13:57:22,460 | INFO | Precision: FP32 | Gradient Checkpointing: DISABLED (avoids backward error)
+2026-03-14 13:57:22,460 | INFO | =======================================================
+2026-03-14 13:57:22,460 | INFO | Loading data ...
+2026-03-14 13:57:22,979 | INFO | Train: 63968 rows (human=31984, AI=31984)
+2026-03-14 13:57:22,979 | INFO | Val:   13708 rows (human=6854, AI=6854)
+2026-03-14 13:57:22,979 | INFO | Loading tokenizer: microsoft/deberta-v3-base ...
+2026-03-14 13:57:23,454 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 13:57:23,513 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 13:57:23,692 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 13:57:23,692 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-14 13:57:23,748 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-14 13:57:23,936 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-14 13:57:24,118 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-14 13:57:24,561 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 13:57:24,561 | INFO | Pre-tokenizing 63968 texts (max_length=384)...
+2026-03-14 13:57:28,028 | INFO | Tokenization complete. Avg length: 184, Max: 384
+2026-03-14 13:57:30,819 | INFO | Pre-tokenizing 13708 texts (max_length=384)...
+2026-03-14 13:57:31,814 | INFO | Tokenization complete. Avg length: 185, Max: 384
+2026-03-14 13:57:31,970 | INFO | Loading model: microsoft/deberta-v3-base ...
+2026-03-14 13:57:32,269 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 13:57:32,332 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-base/8ccc9b6f36199bec6961081d44eb72fb3f7353f3/config.json "HTTP/1.1 200 OK"
+2026-03-14 13:57:32,555 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-03-14 13:57:32,809 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/main "HTTP/1.1 200 OK"
+2026-03-14 13:57:33,023 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-14 13:57:33,236 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/refs%2Fpr%2F14 "HTTP/1.1 200 OK"
+2026-03-14 13:57:33,426 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-14 13:57:33,608 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors "HTTP/1.1 302 Found"
+2026-03-14 13:57:33,823 | INFO | Parameters: 184,423,682 total / 184,423,682 trainable
+2026-03-14 13:57:33,823 | INFO | Training schedule:
+2026-03-14 13:57:33,823 | INFO |   Steps per epoch: 1999
+2026-03-14 13:57:33,823 | INFO |   Total steps:     9995
+2026-03-14 13:57:33,838 | INFO |   Warmup steps:    999
+2026-03-14 13:57:34,091 | INFO |  
+2026-03-14 13:57:34,091 | INFO | Starting training...
+2026-03-14 13:57:34,091 | INFO | Expected: ~2-5s/it, ~8-12 hours total
+2026-03-14 13:57:34,091 | INFO |  
+2026-03-14 13:57:34,091 | INFO | VRAM before training: 0.38 GB allocated
+2026-03-14 14:54:44,347 | INFO | Peak VRAM usage: 2.56 GB
+2026-03-14 14:54:44,348 | INFO | Saving best model to E:\final_project\models\deberta\best_model ...
+2026-03-14 14:54:44,675 | INFO |  
+2026-03-14 14:54:44,675 | INFO | Final evaluation...
+2026-03-14 14:56:47,748 | INFO |  
+2026-03-14 14:56:47,748 | INFO | =======================================================
+2026-03-14 14:56:47,748 | INFO | FINAL RESULTS
+2026-03-14 14:56:47,748 | INFO | =======================================================
+2026-03-14 14:56:47,748 | INFO | accuracy    : 0.9025
+2026-03-14 14:56:47,748 | INFO | f1          : 0.9108
+2026-03-14 14:56:47,748 | INFO | precision   : 0.8394
+2026-03-14 14:56:47,758 | INFO | recall      : 0.9956
+2026-03-14 14:56:47,758 | INFO | auc_roc     : 0.9833
+2026-03-14 14:56:47,758 | INFO | =======================================================
+2026-03-14 14:56:47,788 | INFO |  
+2026-03-14 14:56:47,789 | INFO | Runtime: 1.0 hours
+2026-03-14 14:56:47,789 | INFO | Model saved to: E:\final_project\models\deberta\best_model
+2026-03-14 14:56:47,789 | INFO | Done!
+2026-03-14 16:21:45,096 | INFO | ============================================================
+2026-03-14 16:21:45,096 | INFO | GPU            : NVIDIA GeForce RTX 4060 Laptop GPU
+2026-03-14 16:21:45,096 | INFO | VRAM           : 8.6 GB
+2026-03-14 16:21:45,096 | INFO | CUDA Version   : 11.8
+2026-03-14 16:21:45,096 | INFO | PyTorch Version: 2.7.1+cu118
+2026-03-14 16:21:45,096 | INFO | ============================================================
+2026-03-14 16:21:45,096 | INFO | ============================================================
+2026-03-14 16:21:45,096 | INFO | DeBERTa-v3-LARGE Fine-tuning
+2026-03-14 16:21:45,096 | INFO | Model          : microsoft/deberta-v3-large
+2026-03-14 16:21:45,096 | INFO | Max length     : 512 tokens
+2026-03-14 16:21:45,096 | INFO | Batch          : 1 (accumulation 32 → effective 32)
+2026-03-14 16:21:45,096 | INFO | Grad checkpoint: ENABLED (saves ~40%% VRAM, +~20%% time)
+2026-03-14 16:21:45,096 | INFO | Precision      : BF16
+2026-03-14 16:21:45,096 | INFO | ============================================================
+2026-03-14 16:21:45,096 | INFO | Loading data ...
+2026-03-14 16:21:45,683 | INFO | Train: 63968 rows  (human=31984  AI=31984)
+2026-03-14 16:21:45,683 | INFO | Val:   13708 rows  (human=6854  AI=6854)
+2026-03-14 16:21:45,683 | INFO | Loading tokenizer: microsoft/deberta-v3-large ...
+2026-03-14 16:21:46,163 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 16:21:46,216 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-large/64a8c8eab3e352a784c658aef62be1662607476f/config.json "HTTP/1.1 200 OK"
+2026-03-14 16:21:46,425 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 16:21:46,470 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-large/64a8c8eab3e352a784c658aef62be1662607476f/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-14 16:21:46,660 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-14 16:21:46,848 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-14 16:21:47,358 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large "HTTP/1.1 200 OK"
+2026-03-14 16:21:47,358 | INFO | Pre-tokenizing 63968 texts (max_length=512) ...
+2026-03-14 16:21:51,233 | INFO | Tokenization done. Avg length: 188  Max: 512  (budget: 512)
+2026-03-14 16:21:51,233 | INFO | Texts hitting max_length (truncated): 0.9%
+2026-03-14 16:21:54,498 | INFO | Pre-tokenizing 13708 texts (max_length=512) ...
+2026-03-14 16:21:55,464 | INFO | Tokenization done. Avg length: 190  Max: 512  (budget: 512)
+2026-03-14 16:21:55,479 | INFO | Texts hitting max_length (truncated): 0.9%
+2026-03-14 16:21:55,611 | INFO | Loading model: microsoft/deberta-v3-large ...
+2026-03-14 16:21:56,003 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 16:21:56,003 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-14 16:21:56,062 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-large/64a8c8eab3e352a784c658aef62be1662607476f/config.json "HTTP/1.1 200 OK"
+2026-03-14 16:21:56,302 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-03-14 16:21:56,499 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large "HTTP/1.1 200 OK"
+2026-03-14 16:21:56,704 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/commits/main "HTTP/1.1 200 OK"
+2026-03-14 16:21:56,869 | INFO | Gradient checkpointing: ENABLED
+2026-03-14 16:21:56,869 | INFO | Parameters: 435,063,810 total / 435,063,810 trainable
+2026-03-14 16:21:56,869 | INFO | Training schedule:
+2026-03-14 16:21:56,869 | INFO |   Steps per epoch : 1999
+2026-03-14 16:21:56,869 | INFO |   Total steps     : 7996
+2026-03-14 16:21:56,869 | INFO |   Warmup steps    : 799
+2026-03-14 16:21:56,911 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-14 16:21:57,101 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/commits/refs%2Fpr%2F13 "HTTP/1.1 200 OK"
+2026-03-14 16:21:57,290 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/refs%2Fpr%2F13/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-14 16:21:57,340 | INFO | VRAM before training: 0.87 GB
+2026-03-14 16:21:57,340 | INFO |  
+2026-03-14 16:21:57,340 | INFO | Starting training ...
+2026-03-14 16:21:57,340 | INFO | Expected: ~5-10s/it (large model), ~15-25 hours total
+2026-03-14 16:21:57,340 | INFO | If OOM: reduce max_length to 384 or reduce grad_accumulation to 16
+2026-03-14 16:21:57,340 | INFO |  
+2026-03-14 16:21:57,576 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/refs%2Fpr%2F13/model.safetensors "HTTP/1.1 302 Found"
+2026-03-15 00:29:46,756 | INFO | Peak VRAM usage: 4.42 GB / 8.00 GB
+2026-03-15 00:29:46,756 | INFO | Saving best model to E:\final_project\models\deberta\best_model ...
+2026-03-15 00:29:47,661 | INFO |  
+2026-03-15 00:29:47,661 | INFO | Final evaluation on validation set ...
+2026-03-15 00:35:07,801 | INFO |  
+2026-03-15 00:35:07,801 | INFO | ============================================================
+2026-03-15 00:35:07,801 | INFO | FINAL RESULTS  (deberta-v3-large, max_len=512)
+2026-03-15 00:35:07,801 | INFO | ============================================================
+2026-03-15 00:35:07,801 | INFO | accuracy    : 0.9200
+2026-03-15 00:35:07,801 | INFO | f1          : 0.9255
+2026-03-15 00:35:07,801 | INFO | precision   : 0.8659
+2026-03-15 00:35:07,801 | INFO | recall      : 0.9939
+2026-03-15 00:35:07,801 | INFO | auc_roc     : 0.9894
+2026-03-15 00:35:07,801 | INFO | ============================================================
+2026-03-15 00:35:07,829 | INFO |  
+2026-03-15 00:35:07,831 | INFO | Runtime : 8.1 hours
+2026-03-15 00:35:07,831 | INFO | Model   : E:\final_project\models\deberta\best_model
+2026-03-15 00:35:07,831 | INFO | Done!
+2026-03-16 16:51:29,359 | INFO | ============================================================
+2026-03-16 16:51:29,359 | INFO | GPU            : NVIDIA GeForce RTX 4060 Laptop GPU
+2026-03-16 16:51:29,359 | INFO | VRAM           : 8.6 GB
+2026-03-16 16:51:29,359 | INFO | CUDA Version   : 11.8
+2026-03-16 16:51:29,359 | INFO | PyTorch Version: 2.7.1+cu118
+2026-03-16 16:51:29,359 | INFO | ============================================================
+2026-03-16 16:51:29,359 | INFO | ============================================================
+2026-03-16 16:51:29,359 | INFO | DeBERTa-v3-LARGE Fine-tuning
+2026-03-16 16:51:29,359 | INFO | Model          : microsoft/deberta-v3-large
+2026-03-16 16:51:29,359 | INFO | Max length     : 512 tokens
+2026-03-16 16:51:29,359 | INFO | Batch          : 1 (accumulation 32 → effective 32)
+2026-03-16 16:51:29,359 | INFO | Grad checkpoint: ENABLED (saves ~40%% VRAM, +~20%% time)
+2026-03-16 16:51:29,359 | INFO | Precision      : BF16
+2026-03-16 16:51:29,359 | INFO | ============================================================
+2026-03-16 16:51:29,359 | INFO | Loading data ...
+2026-03-16 16:51:30,666 | INFO | Train: 120022 rows  (human=60011  AI=60011)
+2026-03-16 16:51:30,666 | INFO | Val:   25719 rows  (human=12859  AI=12860)
+2026-03-16 16:51:30,666 | INFO | Loading tokenizer: microsoft/deberta-v3-large ...
+2026-03-16 16:51:31,171 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-16 16:51:31,171 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-16 16:51:31,226 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-large/64a8c8eab3e352a784c658aef62be1662607476f/config.json "HTTP/1.1 200 OK"
+2026-03-16 16:51:31,409 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-16 16:51:31,467 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-large/64a8c8eab3e352a784c658aef62be1662607476f/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-16 16:51:31,709 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-16 16:51:31,891 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-16 16:51:32,437 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large "HTTP/1.1 200 OK"
+2026-03-16 16:51:32,437 | INFO | Pre-tokenizing 120022 texts (max_length=512) ...
+2026-03-16 16:51:41,180 | INFO | Tokenization done. Avg length: 226  Max: 512  (budget: 512)
+2026-03-16 16:51:41,180 | INFO | Texts hitting max_length (truncated): 2.9%
+2026-03-16 16:51:49,445 | INFO | Pre-tokenizing 25719 texts (max_length=512) ...
+2026-03-16 16:51:51,760 | INFO | Tokenization done. Avg length: 225  Max: 512  (budget: 512)
+2026-03-16 16:51:51,760 | INFO | Texts hitting max_length (truncated): 2.8%
+2026-03-16 16:51:52,158 | INFO | Loading model: microsoft/deberta-v3-large ...
+2026-03-16 16:51:52,438 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-16 16:51:52,493 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-large/64a8c8eab3e352a784c658aef62be1662607476f/config.json "HTTP/1.1 200 OK"
+2026-03-16 16:51:52,715 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-03-16 16:51:52,914 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large "HTTP/1.1 200 OK"
+2026-03-16 16:51:53,118 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/commits/main "HTTP/1.1 200 OK"
+2026-03-16 16:51:53,284 | INFO | Gradient checkpointing: ENABLED
+2026-03-16 16:51:53,284 | INFO | Parameters: 435,063,810 total / 435,063,810 trainable
+2026-03-16 16:51:53,284 | INFO | Training schedule:
+2026-03-16 16:51:53,284 | INFO |   Steps per epoch : 3750
+2026-03-16 16:51:53,284 | INFO |   Total steps     : 15000
+2026-03-16 16:51:53,284 | INFO |   Warmup steps    : 1500
+2026-03-16 16:51:53,322 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-16 16:51:53,520 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/commits/refs%2Fpr%2F13 "HTTP/1.1 200 OK"
+2026-03-16 16:51:53,704 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/refs%2Fpr%2F13/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-16 16:51:53,845 | INFO | VRAM before training: 0.87 GB
+2026-03-16 16:51:53,845 | INFO |  
+2026-03-16 16:51:53,845 | INFO | Starting training ...
+2026-03-16 16:51:53,845 | INFO | Expected: ~5-10s/it (large model), ~15-25 hours total
+2026-03-16 16:51:53,845 | INFO | If OOM: reduce max_length to 384 or reduce grad_accumulation to 16
+2026-03-16 16:51:53,845 | INFO |  
+2026-03-16 16:51:54,209 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/refs%2Fpr%2F13/model.safetensors "HTTP/1.1 302 Found"
+2026-03-16 23:53:34,216 | INFO | Peak VRAM usage: 4.41 GB / 8.00 GB
+2026-03-16 23:53:34,216 | INFO | Saving best model to E:\final_project\models\deberta\best_model ...
+2026-03-16 23:53:35,444 | INFO |  
+2026-03-16 23:53:35,444 | INFO | Final evaluation on validation set ...
+2026-03-17 00:05:43,115 | INFO |  
+2026-03-17 00:05:43,115 | INFO | ============================================================
+2026-03-17 00:05:43,115 | INFO | FINAL RESULTS  (deberta-v3-large, max_len=512)
+2026-03-17 00:05:43,115 | INFO | ============================================================
+2026-03-17 00:05:43,115 | INFO | accuracy    : 0.9279
+2026-03-17 00:05:43,115 | INFO | f1          : 0.9285
+2026-03-17 00:05:43,115 | INFO | precision   : 0.9206
+2026-03-17 00:05:43,115 | INFO | recall      : 0.9365
+2026-03-17 00:05:43,115 | INFO | auc_roc     : 0.9787
+2026-03-17 00:05:43,115 | INFO | ============================================================
+2026-03-17 00:05:43,142 | INFO |  
+2026-03-17 00:05:43,142 | INFO | Runtime : 7.0 hours
+2026-03-17 00:05:43,143 | INFO | Model   : E:\final_project\models\deberta\best_model
+2026-03-17 00:05:43,143 | INFO | Done!
+2026-03-18 00:29:05,114 | INFO | ============================================================
+2026-03-18 00:29:05,114 | INFO | GPU            : NVIDIA GeForce RTX 4060 Laptop GPU
+2026-03-18 00:29:05,114 | INFO | VRAM           : 8.6 GB
+2026-03-18 00:29:05,114 | INFO | CUDA Version   : 11.8
+2026-03-18 00:29:05,114 | INFO | PyTorch Version: 2.7.1+cu118
+2026-03-18 00:29:05,114 | INFO | ============================================================
+2026-03-18 00:29:05,114 | INFO | ============================================================
+2026-03-18 00:29:05,114 | INFO | DeBERTa-v3-LARGE Fine-tuning
+2026-03-18 00:29:05,114 | INFO | Model          : microsoft/deberta-v3-large
+2026-03-18 00:29:05,114 | INFO | Max length     : 512 tokens
+2026-03-18 00:29:05,114 | INFO | Batch          : 1 (accumulation 32 → effective 32)
+2026-03-18 00:29:05,114 | INFO | Grad checkpoint: ENABLED (saves ~40%% VRAM, +~20%% time)
+2026-03-18 00:29:05,114 | INFO | Precision      : BF16
+2026-03-18 00:29:05,114 | INFO | ============================================================
+2026-03-18 00:29:05,119 | INFO | Loading data ...
+2026-03-18 00:29:06,082 | INFO | Train: 119949 rows  (human=59974  AI=59975)
+2026-03-18 00:29:06,082 | INFO | Val:   25703 rows  (human=12852  AI=12851)
+2026-03-18 00:29:06,082 | INFO | Loading tokenizer: microsoft/deberta-v3-large ...
+2026-03-18 00:29:06,680 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 00:29:06,680 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-18 00:29:06,797 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-large/64a8c8eab3e352a784c658aef62be1662607476f/config.json "HTTP/1.1 200 OK"
+2026-03-18 00:29:07,098 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 00:29:07,280 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-large/64a8c8eab3e352a784c658aef62be1662607476f/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-18 00:29:07,526 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-18 00:29:07,798 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-18 00:29:08,441 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large "HTTP/1.1 200 OK"
+2026-03-18 00:29:08,441 | INFO | Pre-tokenizing 119949 texts (max_length=512) ...
+2026-03-18 00:29:15,500 | INFO | Tokenization done. Avg length: 181  Max: 512  (budget: 512)
+2026-03-18 00:29:15,500 | INFO | Texts hitting max_length (truncated): 0.6%
+2026-03-18 00:29:23,127 | INFO | Pre-tokenizing 25703 texts (max_length=512) ...
+2026-03-18 00:29:25,088 | INFO | Tokenization done. Avg length: 181  Max: 512  (budget: 512)
+2026-03-18 00:29:25,088 | INFO | Texts hitting max_length (truncated): 0.7%
+2026-03-18 00:29:25,437 | INFO | Loading model: microsoft/deberta-v3-large ...
+2026-03-18 00:29:25,940 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 00:29:26,006 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-large/64a8c8eab3e352a784c658aef62be1662607476f/config.json "HTTP/1.1 200 OK"
+2026-03-18 00:29:26,351 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-03-18 00:29:26,569 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large "HTTP/1.1 200 OK"
+2026-03-18 00:29:26,883 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/commits/main "HTTP/1.1 200 OK"
+2026-03-18 00:29:26,910 | INFO | Gradient checkpointing: ENABLED
+2026-03-18 00:29:26,912 | INFO | Parameters: 435,063,810 total / 435,063,810 trainable
+2026-03-18 00:29:26,912 | INFO | Training schedule:
+2026-03-18 00:29:26,912 | INFO |   Steps per epoch : 3748
+2026-03-18 00:29:26,912 | INFO |   Total steps     : 14992
+2026-03-18 00:29:26,913 | INFO |   Warmup steps    : 1499
+2026-03-18 00:29:27,162 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-18 00:29:27,215 | INFO | VRAM before training: 0.87 GB
+2026-03-18 00:29:27,215 | INFO |  
+2026-03-18 00:29:27,215 | INFO | Starting training ...
+2026-03-18 00:29:27,219 | INFO | Expected: ~5-10s/it (large model), ~15-25 hours total
+2026-03-18 00:29:27,219 | INFO | If OOM: reduce max_length to 384 or reduce grad_accumulation to 16
+2026-03-18 00:29:27,219 | INFO |  
+2026-03-18 00:29:27,576 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/commits/refs%2Fpr%2F13 "HTTP/1.1 200 OK"
+2026-03-18 00:29:27,786 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/refs%2Fpr%2F13/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-18 00:29:28,166 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/refs%2Fpr%2F13/model.safetensors "HTTP/1.1 302 Found"
+2026-03-18 11:28:25,019 | INFO | ============================================================
+2026-03-18 11:28:25,019 | INFO | GPU            : NVIDIA GeForce RTX 4060 Laptop GPU
+2026-03-18 11:28:25,019 | INFO | VRAM           : 8.6 GB
+2026-03-18 11:28:25,019 | INFO | CUDA Version   : 11.8
+2026-03-18 11:28:25,019 | INFO | PyTorch Version: 2.7.1+cu118
+2026-03-18 11:28:25,019 | INFO | ============================================================
+2026-03-18 11:28:25,019 | INFO | ============================================================
+2026-03-18 11:28:25,019 | INFO | DeBERTa-v3-LARGE Fine-tuning
+2026-03-18 11:28:25,019 | INFO | Model          : microsoft/deberta-v3-large
+2026-03-18 11:28:25,019 | INFO | Max length     : 448 tokens
+2026-03-18 11:28:25,019 | INFO | Batch          : 1 (accumulation 32 → effective 32)
+2026-03-18 11:28:25,019 | INFO | Grad checkpoint: ENABLED (saves ~40%% VRAM, +~20%% time)
+2026-03-18 11:28:25,019 | INFO | Precision      : BF16
+2026-03-18 11:28:25,019 | INFO | ============================================================
+2026-03-18 11:28:25,032 | INFO | Loading data ...
+2026-03-18 11:28:26,150 | INFO | Train: 119949 rows  (human=59974  AI=59975)
+2026-03-18 11:28:26,150 | INFO | Val:   25703 rows  (human=12852  AI=12851)
+2026-03-18 11:28:26,150 | INFO | Loading tokenizer: microsoft/deberta-v3-large ...
+2026-03-18 11:28:26,617 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 11:28:26,677 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-large/64a8c8eab3e352a784c658aef62be1662607476f/config.json "HTTP/1.1 200 OK"
+2026-03-18 11:28:26,881 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 11:28:26,881 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-18 11:28:26,932 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-large/64a8c8eab3e352a784c658aef62be1662607476f/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-18 11:28:27,140 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-18 11:28:27,334 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-18 11:28:27,808 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large "HTTP/1.1 200 OK"
+2026-03-18 11:28:27,824 | INFO | Pre-tokenizing 119949 texts (max_length=448) ...
+2026-03-18 11:28:35,255 | INFO | Tokenization done. Avg length: 180  Max: 448  (budget: 448)
+2026-03-18 11:28:35,255 | INFO | Texts hitting max_length (truncated): 3.1%
+2026-03-18 11:28:42,442 | INFO | Pre-tokenizing 25703 texts (max_length=448) ...
+2026-03-18 11:28:44,316 | INFO | Tokenization done. Avg length: 180  Max: 448  (budget: 448)
+2026-03-18 11:28:44,316 | INFO | Texts hitting max_length (truncated): 3.0%
+2026-03-18 11:28:44,641 | INFO | Loading model: microsoft/deberta-v3-large ...
+2026-03-18 11:28:44,939 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 11:28:44,987 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-large/64a8c8eab3e352a784c658aef62be1662607476f/config.json "HTTP/1.1 200 OK"
+2026-03-18 11:28:45,219 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-03-18 11:28:45,412 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large "HTTP/1.1 200 OK"
+2026-03-18 11:28:45,612 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/commits/main "HTTP/1.1 200 OK"
+2026-03-18 11:28:45,758 | INFO | Gradient checkpointing: ENABLED
+2026-03-18 11:28:45,758 | INFO | Parameters: 435,063,810 total / 435,063,810 trainable
+2026-03-18 11:28:45,758 | INFO | Training schedule:
+2026-03-18 11:28:45,758 | INFO |   Steps per epoch : 3748
+2026-03-18 11:28:45,758 | INFO |   Total steps     : 14992
+2026-03-18 11:28:45,758 | INFO |   Warmup steps    : 1499
+2026-03-18 11:28:45,813 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-18 11:28:46,009 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/commits/refs%2Fpr%2F13 "HTTP/1.1 200 OK"
+2026-03-18 11:28:46,053 | INFO | VRAM before training: 0.87 GB
+2026-03-18 11:28:46,053 | INFO |  
+2026-03-18 11:28:46,053 | INFO | Starting training ...
+2026-03-18 11:28:46,053 | INFO | Expected: ~5-10s/it (large model), ~15-25 hours total
+2026-03-18 11:28:46,053 | INFO | If OOM: reduce max_length to 384 or reduce grad_accumulation to 16
+2026-03-18 11:28:46,053 | INFO |  
+2026-03-18 11:28:46,412 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/refs%2Fpr%2F13/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-18 11:28:46,594 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/refs%2Fpr%2F13/model.safetensors "HTTP/1.1 302 Found"
+2026-03-18 13:37:24,415 | INFO | ============================================================
+2026-03-18 13:37:24,415 | INFO | GPU            : NVIDIA GeForce RTX 4060 Laptop GPU
+2026-03-18 13:37:24,415 | INFO | VRAM           : 8.6 GB
+2026-03-18 13:37:24,415 | INFO | CUDA Version   : 11.8
+2026-03-18 13:37:24,415 | INFO | PyTorch Version: 2.7.1+cu118
+2026-03-18 13:37:24,415 | INFO | ============================================================
+2026-03-18 13:37:24,415 | INFO | ============================================================
+2026-03-18 13:37:24,415 | INFO | DeBERTa-v3-LARGE Fine-tuning
+2026-03-18 13:37:24,415 | INFO | Model          : microsoft/deberta-v3-large
+2026-03-18 13:37:24,415 | INFO | Max length     : 448 tokens
+2026-03-18 13:37:24,415 | INFO | Batch          : 1 (accumulation 32 → effective 32)
+2026-03-18 13:37:24,415 | INFO | Grad checkpoint: ENABLED (saves ~40%% VRAM, +~20%% time)
+2026-03-18 13:37:24,415 | INFO | Precision      : BF16
+2026-03-18 13:37:24,415 | INFO | ============================================================
+2026-03-18 13:37:24,415 | INFO | Loading data ...
+2026-03-18 13:37:25,498 | INFO | Train: 119949 rows  (human=59974  AI=59975)
+2026-03-18 13:37:25,498 | INFO | Val:   25703 rows  (human=12852  AI=12851)
+2026-03-18 13:37:25,498 | INFO | Loading tokenizer: microsoft/deberta-v3-large ...
+2026-03-18 13:37:25,964 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 13:37:26,006 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-large/64a8c8eab3e352a784c658aef62be1662607476f/config.json "HTTP/1.1 200 OK"
+2026-03-18 13:37:26,194 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 13:37:26,234 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-large/64a8c8eab3e352a784c658aef62be1662607476f/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-18 13:37:26,415 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-18 13:37:26,600 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-18 13:37:27,133 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large "HTTP/1.1 200 OK"
+2026-03-18 13:37:27,133 | INFO | Pre-tokenizing 119949 texts (max_length=448) ...
+2026-03-18 13:37:34,622 | INFO | Tokenization done. Avg length: 180  Max: 448  (budget: 448)
+2026-03-18 13:37:34,622 | INFO | Texts hitting max_length (truncated): 3.1%
+2026-03-18 13:37:41,548 | INFO | Pre-tokenizing 25703 texts (max_length=448) ...
+2026-03-18 13:37:43,464 | INFO | Tokenization done. Avg length: 180  Max: 448  (budget: 448)
+2026-03-18 13:37:43,464 | INFO | Texts hitting max_length (truncated): 3.0%
+2026-03-18 13:37:43,859 | INFO | Loading model: microsoft/deberta-v3-large ...
+2026-03-18 13:37:44,180 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 13:37:44,229 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-large/64a8c8eab3e352a784c658aef62be1662607476f/config.json "HTTP/1.1 200 OK"
+2026-03-18 13:37:44,500 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-03-18 13:37:44,737 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large "HTTP/1.1 200 OK"
+2026-03-18 13:37:44,977 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/commits/main "HTTP/1.1 200 OK"
+2026-03-18 13:37:45,061 | INFO | Gradient checkpointing: ENABLED
+2026-03-18 13:37:45,061 | INFO | Parameters: 435,063,810 total / 435,063,810 trainable
+2026-03-18 13:37:45,061 | INFO | Training schedule:
+2026-03-18 13:37:45,061 | INFO |   Steps per epoch : 3748
+2026-03-18 13:37:45,061 | INFO |   Total steps     : 14992
+2026-03-18 13:37:45,061 | INFO |   Warmup steps    : 1499
+2026-03-18 13:37:45,188 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-18 13:37:45,355 | INFO | VRAM before training: 0.87 GB
+2026-03-18 13:37:45,355 | INFO |  
+2026-03-18 13:37:45,355 | INFO | Starting training ...
+2026-03-18 13:37:45,355 | INFO | Expected: ~5-10s/it (large model), ~15-25 hours total
+2026-03-18 13:37:45,355 | INFO | If OOM: reduce max_length to 384 or reduce grad_accumulation to 16
+2026-03-18 13:37:45,355 | INFO |  
+2026-03-18 13:37:45,722 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/commits/refs%2Fpr%2F13 "HTTP/1.1 200 OK"
+2026-03-18 13:37:45,917 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/refs%2Fpr%2F13/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-18 13:37:46,124 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/refs%2Fpr%2F13/model.safetensors "HTTP/1.1 302 Found"
+2026-03-18 13:37:46,124 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-18 15:12:21,764 | INFO | Peak VRAM usage: 4.42 GB / 8.00 GB
+2026-03-18 15:12:21,764 | INFO | Saving best model to E:\final_project\models\deberta\best_model ...
+2026-03-18 15:12:22,482 | INFO |  
+2026-03-18 15:12:22,482 | INFO | Final evaluation on validation set ...
+2026-03-18 15:21:29,864 | INFO |  
+2026-03-18 15:21:29,864 | INFO | ============================================================
+2026-03-18 15:21:29,864 | INFO | FINAL RESULTS  (deberta-v3-large, max_len=448)
+2026-03-18 15:21:29,864 | INFO | ============================================================
+2026-03-18 15:21:29,864 | INFO | accuracy    : 0.4983
+2026-03-18 15:21:29,864 | INFO | f1          : 0.6586
+2026-03-18 15:21:29,864 | INFO | precision   : 0.4991
+2026-03-18 15:21:29,864 | INFO | recall      : 0.9681
+2026-03-18 15:21:29,864 | INFO | auc_roc     : 0.5259
+2026-03-18 15:21:29,874 | INFO | ============================================================
+2026-03-18 15:21:29,890 | INFO |  
+2026-03-18 15:21:29,891 | INFO | Runtime : 1.6 hours
+2026-03-18 15:21:29,891 | INFO | Model   : E:\final_project\models\deberta\best_model
+2026-03-18 15:21:29,891 | INFO | Done!
+2026-03-18 15:33:06,629 | INFO | ============================================================
+2026-03-18 15:33:06,629 | INFO | GPU            : NVIDIA GeForce RTX 4060 Laptop GPU
+2026-03-18 15:33:06,629 | INFO | VRAM           : 8.6 GB
+2026-03-18 15:33:06,629 | INFO | CUDA Version   : 11.8
+2026-03-18 15:33:06,629 | INFO | PyTorch Version: 2.7.1+cu118
+2026-03-18 15:33:06,629 | INFO | ============================================================
+2026-03-18 15:33:06,629 | INFO | ============================================================
+2026-03-18 15:33:06,629 | INFO | DeBERTa-v3-LARGE Fine-tuning
+2026-03-18 15:33:06,629 | INFO | Model          : microsoft/deberta-v3-large
+2026-03-18 15:33:06,629 | INFO | Max length     : 448 tokens
+2026-03-18 15:33:06,629 | INFO | Batch          : 1 (accumulation 32 → effective 32)
+2026-03-18 15:33:06,629 | INFO | Grad checkpoint: ENABLED (saves ~40%% VRAM, +~20%% time)
+2026-03-18 15:33:06,629 | INFO | Precision      : BF16
+2026-03-18 15:33:06,629 | INFO | ============================================================
+2026-03-18 15:33:06,645 | INFO | Loading data ...
+2026-03-18 15:33:07,840 | INFO | Train: 119949 rows  (human=59974  AI=59975)
+2026-03-18 15:33:07,840 | INFO | Val:   25703 rows  (human=12852  AI=12851)
+2026-03-18 15:33:07,856 | INFO | Loading tokenizer: microsoft/deberta-v3-large ...
+2026-03-18 15:33:08,308 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 15:33:08,363 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-large/64a8c8eab3e352a784c658aef62be1662607476f/config.json "HTTP/1.1 200 OK"
+2026-03-18 15:33:08,559 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 15:33:08,610 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-large/64a8c8eab3e352a784c658aef62be1662607476f/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-18 15:33:08,811 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-18 15:33:08,995 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-18 15:33:09,495 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large "HTTP/1.1 200 OK"
+2026-03-18 15:33:09,495 | INFO | Pre-tokenizing 119949 texts (max_length=448) ...
+2026-03-18 15:33:16,303 | INFO | Tokenization done. Avg length: 180  Max: 448  (budget: 448)
+2026-03-18 15:33:16,303 | INFO | Texts hitting max_length (truncated): 3.1%
+2026-03-18 15:33:22,700 | INFO | Pre-tokenizing 25703 texts (max_length=448) ...
+2026-03-18 15:33:24,577 | INFO | Tokenization done. Avg length: 180  Max: 448  (budget: 448)
+2026-03-18 15:33:24,577 | INFO | Texts hitting max_length (truncated): 3.0%
+2026-03-18 15:33:24,940 | INFO | Loading model: microsoft/deberta-v3-large ...
+2026-03-18 15:33:25,237 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 15:33:25,307 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-large/64a8c8eab3e352a784c658aef62be1662607476f/config.json "HTTP/1.1 200 OK"
+2026-03-18 15:33:25,549 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-03-18 15:33:25,768 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large "HTTP/1.1 200 OK"
+2026-03-18 15:33:25,977 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/commits/main "HTTP/1.1 200 OK"
+2026-03-18 15:33:26,123 | INFO | Gradient checkpointing: ENABLED
+2026-03-18 15:33:26,123 | INFO | Parameters: 435,063,810 total / 435,063,810 trainable
+2026-03-18 15:33:26,123 | INFO | Training schedule:
+2026-03-18 15:33:26,123 | INFO |   Steps per epoch : 3748
+2026-03-18 15:33:26,123 | INFO |   Total steps     : 14992
+2026-03-18 15:33:26,123 | INFO |   Warmup steps    : 1499
+2026-03-18 15:33:26,174 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-18 15:33:26,368 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/commits/refs%2Fpr%2F13 "HTTP/1.1 200 OK"
+2026-03-18 15:33:26,415 | INFO | VRAM before training: 0.87 GB
+2026-03-18 15:33:26,415 | INFO |  
+2026-03-18 15:33:26,415 | INFO | Starting training ...
+2026-03-18 15:33:26,416 | INFO | Expected: ~5-10s/it (large model), ~15-25 hours total
+2026-03-18 15:33:26,416 | INFO | If OOM: reduce max_length to 384 or reduce grad_accumulation to 16
+2026-03-18 15:33:26,416 | INFO |  
+2026-03-18 15:33:26,761 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/refs%2Fpr%2F13/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-18 15:33:26,944 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/refs%2Fpr%2F13/model.safetensors "HTTP/1.1 302 Found"
+2026-03-18 21:56:52,758 | INFO | Peak VRAM usage: 4.42 GB / 8.00 GB
+2026-03-18 21:56:52,758 | INFO | Saving best model to E:\final_project\models\deberta\best_model ...
+2026-03-18 21:56:53,461 | INFO |  
+2026-03-18 21:56:53,461 | INFO | Final evaluation on validation set ...
+2026-03-18 22:05:50,723 | INFO |  
+2026-03-18 22:05:50,723 | INFO | ============================================================
+2026-03-18 22:05:50,723 | INFO | FINAL RESULTS  (deberta-v3-large, max_len=448)
+2026-03-18 22:05:50,724 | INFO | ============================================================
+2026-03-18 22:05:50,724 | INFO | accuracy    : 0.8890
+2026-03-18 22:05:50,724 | INFO | f1          : 0.8980
+2026-03-18 22:05:50,724 | INFO | precision   : 0.8309
+2026-03-18 22:05:50,724 | INFO | recall      : 0.9767
+2026-03-18 22:05:50,724 | INFO | auc_roc     : 0.9774
+2026-03-18 22:05:50,724 | INFO | ============================================================
+2026-03-18 22:05:50,743 | INFO |  
+2026-03-18 22:05:50,743 | INFO | Runtime : 6.4 hours
+2026-03-18 22:05:50,743 | INFO | Model   : E:\final_project\models\deberta\best_model
+2026-03-18 22:05:50,743 | INFO | Done!
+2026-03-18 23:13:38,062 | INFO | ============================================================
+2026-03-18 23:13:38,062 | INFO | GPU            : NVIDIA GeForce RTX 4060 Laptop GPU
+2026-03-18 23:13:38,062 | INFO | VRAM           : 8.6 GB
+2026-03-18 23:13:38,062 | INFO | CUDA Version   : 11.8
+2026-03-18 23:13:38,062 | INFO | PyTorch Version: 2.7.1+cu118
+2026-03-18 23:13:38,062 | INFO | ============================================================
+2026-03-18 23:13:38,077 | INFO | ============================================================
+2026-03-18 23:13:38,077 | INFO | DeBERTa-v3-LARGE Fine-tuning
+2026-03-18 23:13:38,077 | INFO | Model          : microsoft/deberta-v3-large
+2026-03-18 23:13:38,077 | INFO | Max length     : 448 tokens
+2026-03-18 23:13:38,078 | INFO | Batch          : 1 (accumulation 32 → effective 32)
+2026-03-18 23:13:38,078 | INFO | Grad checkpoint: ENABLED (saves ~40%% VRAM, +~20%% time)
+2026-03-18 23:13:38,078 | INFO | Precision      : BF16
+2026-03-18 23:13:38,078 | INFO | ============================================================
+2026-03-18 23:13:38,099 | INFO | Loading data ...
+2026-03-18 23:13:39,436 | INFO | Train: 119949 rows  (human=59974  AI=59975)
+2026-03-18 23:13:39,436 | INFO | Val:   25703 rows  (human=12852  AI=12851)
+2026-03-18 23:13:39,436 | INFO | Loading tokenizer: microsoft/deberta-v3-large ...
+2026-03-18 23:13:39,933 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 23:13:39,933 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-18 23:13:39,992 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-large/64a8c8eab3e352a784c658aef62be1662607476f/config.json "HTTP/1.1 200 OK"
+2026-03-18 23:13:40,228 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 23:13:40,284 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-large/64a8c8eab3e352a784c658aef62be1662607476f/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-18 23:13:40,491 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-18 23:13:40,687 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-18 23:13:41,225 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large "HTTP/1.1 200 OK"
+2026-03-18 23:13:41,225 | INFO | Pre-tokenizing 119949 texts (max_length=448) ...
+2026-03-18 23:13:47,807 | INFO | Tokenization done. Avg length: 180  Max: 448  (budget: 448)
+2026-03-18 23:13:47,807 | INFO | Texts hitting max_length (truncated): 3.1%
+2026-03-18 23:13:55,755 | INFO | Pre-tokenizing 25703 texts (max_length=448) ...
+2026-03-18 23:13:57,487 | INFO | Tokenization done. Avg length: 180  Max: 448  (budget: 448)
+2026-03-18 23:13:57,487 | INFO | Texts hitting max_length (truncated): 3.0%
+2026-03-18 23:13:57,878 | INFO | Loading model: microsoft/deberta-v3-large ...
+2026-03-18 23:13:58,160 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 23:13:58,252 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-large/64a8c8eab3e352a784c658aef62be1662607476f/config.json "HTTP/1.1 200 OK"
+2026-03-18 23:13:58,490 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-03-18 23:13:58,675 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large "HTTP/1.1 200 OK"
+2026-03-18 23:13:58,871 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/commits/main "HTTP/1.1 200 OK"
+2026-03-18 23:13:59,049 | INFO | Gradient checkpointing: ENABLED
+2026-03-18 23:13:59,049 | INFO | Parameters: 435,063,810 total / 435,063,810 trainable
+2026-03-18 23:13:59,049 | INFO | Training schedule:
+2026-03-18 23:13:59,049 | INFO |   Steps per epoch : 3748
+2026-03-18 23:13:59,049 | INFO |   Total steps     : 14992
+2026-03-18 23:13:59,049 | INFO |   Warmup steps    : 1499
+2026-03-18 23:13:59,071 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-18 23:13:59,265 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/commits/refs%2Fpr%2F13 "HTTP/1.1 200 OK"
+2026-03-18 23:13:59,329 | INFO | VRAM before training: 0.87 GB
+2026-03-18 23:13:59,329 | INFO |  
+2026-03-18 23:13:59,329 | INFO | Starting training ...
+2026-03-18 23:13:59,329 | INFO | Expected: ~5-10s/it (large model), ~15-25 hours total
+2026-03-18 23:13:59,329 | INFO | If OOM: reduce max_length to 384 or reduce grad_accumulation to 16
+2026-03-18 23:13:59,329 | INFO |  
+2026-03-18 23:13:59,689 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/refs%2Fpr%2F13/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-18 23:13:59,880 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/refs%2Fpr%2F13/model.safetensors "HTTP/1.1 302 Found"
+2026-03-18 23:22:23,386 | INFO | ============================================================
+2026-03-18 23:22:23,387 | INFO | GPU            : NVIDIA GeForce RTX 4060 Laptop GPU
+2026-03-18 23:22:23,387 | INFO | VRAM           : 8.6 GB
+2026-03-18 23:22:23,387 | INFO | CUDA Version   : 11.8
+2026-03-18 23:22:23,387 | INFO | PyTorch Version: 2.7.1+cu118
+2026-03-18 23:22:23,387 | INFO | ============================================================
+2026-03-18 23:22:23,387 | INFO | ============================================================
+2026-03-18 23:22:23,387 | INFO | DeBERTa-v3-LARGE Fine-tuning
+2026-03-18 23:22:23,387 | INFO | Model          : microsoft/deberta-v3-large
+2026-03-18 23:22:23,387 | INFO | Max length     : 448 tokens
+2026-03-18 23:22:23,388 | INFO | Batch          : 1 (accumulation 32 → effective 32)
+2026-03-18 23:22:23,388 | INFO | Grad checkpoint: ENABLED (saves ~40%% VRAM, +~20%% time)
+2026-03-18 23:22:23,388 | INFO | Precision      : BF16
+2026-03-18 23:22:23,388 | INFO | ============================================================
+2026-03-18 23:22:23,389 | INFO | Loading data ...
+2026-03-18 23:22:24,454 | INFO | Train: 119949 rows  (human=59974  AI=59975)
+2026-03-18 23:22:24,455 | INFO | Val:   25703 rows  (human=12852  AI=12851)
+2026-03-18 23:22:24,455 | INFO | Loading tokenizer: microsoft/deberta-v3-large ...
+2026-03-18 23:22:24,999 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 23:22:25,000 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-18 23:22:25,089 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-large/64a8c8eab3e352a784c658aef62be1662607476f/config.json "HTTP/1.1 200 OK"
+2026-03-18 23:22:25,307 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 23:22:25,687 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-large/64a8c8eab3e352a784c658aef62be1662607476f/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-18 23:22:25,884 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-18 23:22:26,075 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-18 23:22:26,595 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large "HTTP/1.1 200 OK"
+2026-03-18 23:22:26,596 | INFO | Pre-tokenizing 119949 texts (max_length=448) ...
+2026-03-18 23:22:33,680 | INFO | Tokenization done. Avg length: 180  Max: 448  (budget: 448)
+2026-03-18 23:22:33,696 | INFO | Texts hitting max_length (truncated): 3.1%
+2026-03-18 23:22:40,862 | INFO | Pre-tokenizing 25703 texts (max_length=448) ...
+2026-03-18 23:22:42,831 | INFO | Tokenization done. Avg length: 180  Max: 448  (budget: 448)
+2026-03-18 23:22:42,831 | INFO | Texts hitting max_length (truncated): 3.0%
+2026-03-18 23:22:43,141 | INFO | Loading model: microsoft/deberta-v3-large ...
+2026-03-18 23:22:43,503 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 23:22:43,575 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-large/64a8c8eab3e352a784c658aef62be1662607476f/config.json "HTTP/1.1 200 OK"
+2026-03-18 23:22:43,818 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-03-18 23:22:44,023 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large "HTTP/1.1 200 OK"
+2026-03-18 23:22:44,226 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/commits/main "HTTP/1.1 200 OK"
+2026-03-18 23:22:44,270 | INFO | Gradient checkpointing: ENABLED
+2026-03-18 23:22:44,272 | INFO | Parameters: 435,063,810 total / 435,063,810 trainable
+2026-03-18 23:22:44,272 | INFO | Training schedule:
+2026-03-18 23:22:44,272 | INFO |   Steps per epoch : 3748
+2026-03-18 23:22:44,273 | INFO |   Total steps     : 14992
+2026-03-18 23:22:44,273 | INFO |   Warmup steps    : 1499
+2026-03-18 23:22:44,441 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-18 23:22:44,519 | INFO | VRAM before training: 0.87 GB
+2026-03-18 23:22:44,519 | INFO |  
+2026-03-18 23:22:44,519 | INFO | Starting training ...
+2026-03-18 23:22:44,519 | INFO | Expected: ~5-10s/it (large model), ~15-25 hours total
+2026-03-18 23:22:44,519 | INFO | If OOM: reduce max_length to 384 or reduce grad_accumulation to 16
+2026-03-18 23:22:44,519 | INFO |  
+2026-03-18 23:22:44,863 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/commits/refs%2Fpr%2F13 "HTTP/1.1 200 OK"
+2026-03-18 23:22:45,053 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/refs%2Fpr%2F13/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-18 23:22:45,256 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/refs%2Fpr%2F13/model.safetensors "HTTP/1.1 302 Found"
+2026-03-19 04:46:23,293 | INFO | ============================================================
+2026-03-19 04:46:23,293 | INFO | GPU            : NVIDIA GeForce RTX 4060 Laptop GPU
+2026-03-19 04:46:23,293 | INFO | VRAM           : 8.6 GB
+2026-03-19 04:46:23,293 | INFO | CUDA Version   : 11.8
+2026-03-19 04:46:23,293 | INFO | PyTorch Version: 2.7.1+cu118
+2026-03-19 04:46:23,309 | INFO | ============================================================
+2026-03-19 04:46:23,309 | INFO | ============================================================
+2026-03-19 04:46:23,309 | INFO | DeBERTa-v3-LARGE Fine-tuning
+2026-03-19 04:46:23,309 | INFO | Model          : microsoft/deberta-v3-large
+2026-03-19 04:46:23,309 | INFO | Max length     : 448 tokens
+2026-03-19 04:46:23,309 | INFO | Batch          : 1 (accumulation 32 → effective 32)
+2026-03-19 04:46:23,309 | INFO | Grad checkpoint: ENABLED (saves ~40%% VRAM, +~20%% time)
+2026-03-19 04:46:23,309 | INFO | Precision      : BF16
+2026-03-19 04:46:23,309 | INFO | ============================================================
+2026-03-19 04:46:23,325 | INFO | Loading data ...
+2026-03-19 04:46:24,450 | INFO | Train: 119949 rows  (human=59974  AI=59975)
+2026-03-19 04:46:24,450 | INFO | Val:   25703 rows  (human=12852  AI=12851)
+2026-03-19 04:46:24,450 | INFO | Loading tokenizer: microsoft/deberta-v3-large ...
+2026-03-19 04:46:24,944 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-19 04:46:24,998 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-large/64a8c8eab3e352a784c658aef62be1662607476f/config.json "HTTP/1.1 200 OK"
+2026-03-19 04:46:25,195 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-19 04:46:25,252 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-large/64a8c8eab3e352a784c658aef62be1662607476f/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-19 04:46:25,447 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-19 04:46:25,640 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-19 04:46:26,137 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large "HTTP/1.1 200 OK"
+2026-03-19 04:46:26,137 | INFO | Pre-tokenizing 119949 texts (max_length=448) ...
+2026-03-19 04:46:33,615 | INFO | Tokenization done. Avg length: 180  Max: 448  (budget: 448)
+2026-03-19 04:46:33,615 | INFO | Texts hitting max_length (truncated): 3.1%
+2026-03-19 04:46:41,243 | INFO | Pre-tokenizing 25703 texts (max_length=448) ...
+2026-03-19 04:46:43,031 | INFO | Tokenization done. Avg length: 180  Max: 448  (budget: 448)
+2026-03-19 04:46:43,031 | INFO | Texts hitting max_length (truncated): 3.0%
+2026-03-19 04:46:43,405 | INFO | Loading model: microsoft/deberta-v3-large ...
+2026-03-19 04:46:43,710 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-19 04:46:43,710 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-19 04:46:43,768 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/deberta-v3-large/64a8c8eab3e352a784c658aef62be1662607476f/config.json "HTTP/1.1 200 OK"
+2026-03-19 04:46:44,005 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-03-19 04:46:44,198 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large "HTTP/1.1 200 OK"
+2026-03-19 04:46:44,393 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/commits/main "HTTP/1.1 200 OK"
+2026-03-19 04:46:44,568 | INFO | Parameters: 435,063,810 total / 435,063,810 trainable
+2026-03-19 04:46:44,568 | INFO | Training schedule:
+2026-03-19 04:46:44,568 | INFO |   Steps per epoch : 3748
+2026-03-19 04:46:44,568 | INFO |   Total steps     : 14992
+2026-03-19 04:46:44,568 | INFO |   Warmup steps    : 1499
+2026-03-19 04:46:44,593 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/discussions?p=0 "HTTP/1.1 200 OK"
+2026-03-19 04:46:44,786 | INFO | HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-large/commits/refs%2Fpr%2F13 "HTTP/1.1 200 OK"
+2026-03-19 04:46:44,870 | INFO | VRAM before training: 0.87 GB
+2026-03-19 04:46:44,870 | INFO |  
+2026-03-19 04:46:44,870 | INFO | Starting training ...
+2026-03-19 04:46:44,870 | INFO | Expected: ~5-10s/it (large model), ~15-25 hours total
+2026-03-19 04:46:44,870 | INFO | If OOM: reduce max_length to 384 or reduce grad_accumulation to 16
+2026-03-19 04:46:44,870 | INFO |  
+2026-03-19 04:46:45,198 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/refs%2Fpr%2F13/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-03-19 04:46:45,381 | INFO | HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-large/resolve/refs%2Fpr%2F13/model.safetensors "HTTP/1.1 302 Found"
+2026-03-19 16:44:59,528 | INFO | Peak VRAM usage: 5.22 GB / 8.00 GB
+2026-03-19 16:44:59,528 | INFO | Saving best model to E:\final_project\models\deberta\best_model ...
+2026-03-19 16:45:00,254 | INFO |  
+2026-03-19 16:45:00,254 | INFO | Final evaluation on validation set ...
+2026-03-19 16:54:02,127 | INFO |  
+2026-03-19 16:54:02,127 | INFO | ============================================================
+2026-03-19 16:54:02,127 | INFO | FINAL RESULTS  (deberta-v3-large, max_len=448)
+2026-03-19 16:54:02,127 | INFO | ============================================================
+2026-03-19 16:54:02,127 | INFO | accuracy    : 0.8990
+2026-03-19 16:54:02,127 | INFO | f1          : 0.9075
+2026-03-19 16:54:02,127 | INFO | precision   : 0.8370
+2026-03-19 16:54:02,127 | INFO | recall      : 0.9911
+2026-03-19 16:54:02,127 | INFO | auc_roc     : 0.9892
+2026-03-19 16:54:02,127 | INFO | ============================================================
+2026-03-19 16:54:02,158 | INFO |  
+2026-03-19 16:54:02,158 | INFO | Runtime : 12.0 hours
+2026-03-19 16:54:02,159 | INFO | Model   : E:\final_project\models\deberta\best_model
+2026-03-19 16:54:02,159 | INFO | Done!

@@ -1,0 +1,540 @@
+2026-03-14 15:12:23,800 | INFO | =======================================================
+2026-03-14 15:12:23,800 | INFO | XGBoost Stylometric Classifier Training
+2026-03-14 15:12:23,800 | INFO | =======================================================
+2026-03-14 15:12:23,810 | INFO | Loading CSVs ...
+2026-03-14 15:12:24,453 | INFO | Train: 63968  Val: 13708  Test: 13708
+2026-03-14 15:12:24,453 | INFO | Extracting features for 'train' split (63968 texts) ...
+2026-03-14 15:14:29,202 | INFO |   Saved cache: E:\final_project\data\processed\train_features.npy  E:\final_project\data\processed\train_labels.npy
+2026-03-14 15:14:29,202 | INFO | Extracting features for 'val' split (13708 texts) ...
+2026-03-14 15:14:55,504 | INFO |   Saved cache: E:\final_project\data\processed\val_features.npy  E:\final_project\data\processed\val_labels.npy
+2026-03-14 15:14:55,504 | INFO | Extracting features for 'test' split (13708 texts) ...
+2026-03-14 15:15:21,597 | INFO |   Saved cache: E:\final_project\data\processed\test_features.npy  E:\final_project\data\processed\test_labels.npy
+2026-03-14 15:15:21,597 | INFO | Feature matrix: train=(63968, 39)  val=(13708, 39)  test=(13708, 39)
+2026-03-14 15:15:21,597 | INFO | Fitting StandardScaler on train features ...
+2026-03-14 15:15:21,612 | INFO | Scaler saved to E:\final_project\models\xgboost\scaler.pkl
+2026-03-14 15:15:21,612 | INFO |  
+2026-03-14 15:15:21,612 | INFO | Training XGBoost ...
+2026-03-14 15:15:21,612 | INFO | Params: {
+  "n_estimators": 1000,
+  "max_depth": 8,
+  "learning_rate": 0.03,
+  "subsample": 0.9,
+  "colsample_bytree": 0.9,
+  "min_child_weight": 5,
+  "gamma": 0.1,
+  "reg_alpha": 0.1,
+  "reg_lambda": 1.0,
+  "scale_pos_weight": 1.0,
+  "objective": "binary:logistic",
+  "early_stopping_rounds": 50,
+  "random_state": 42,
+  "n_jobs": -1,
+  "tree_method": "hist",
+  "verbosity": 1
+}
+2026-03-14 15:15:26,633 | INFO | Best iteration: 998
+2026-03-14 15:15:26,633 | INFO |  
+2026-03-14 15:15:26,633 | INFO | -- Evaluation --
+2026-03-14 15:15:26,770 | INFO | TRAIN  | acc=0.9624  f1=0.9620  prec=0.9729  rec=0.9513  auc=0.9943
+2026-03-14 15:15:26,803 | INFO | VAL    | acc=0.8812  f1=0.8780  prec=0.9019  rec=0.8554  auc=0.9539
+2026-03-14 15:15:26,833 | INFO | TEST   | acc=0.8839  f1=0.8821  prec=0.8954  rec=0.8693  auc=0.9541
+2026-03-14 15:15:26,877 | INFO | 
+Classification report (test):
+              precision    recall  f1-score   support
+
+       human       0.87      0.90      0.89      6854
+          AI       0.90      0.87      0.88      6854
+
+    accuracy                           0.88     13708
+   macro avg       0.88      0.88      0.88     13708
+weighted avg       0.88      0.88      0.88     13708
+
+2026-03-14 15:15:26,877 | INFO | Confusion matrix (test):
+[[6158  696]
+ [ 896 5958]]
+2026-03-14 15:15:26,877 | INFO | 
+Top 15 most important features:
+2026-03-14 15:15:26,877 | INFO | 
+             feature  importance
+   ai_filler_density    0.100747
+     ai_filler_count    0.084176
+  avg_word_len_chars    0.069236
+exclamation_per_word    0.066373
+ repeat_phrase_ratio    0.038469
+        min_sent_len    0.034125
+          word_count    0.032814
+     unigram_entropy    0.032359
+          sent_count    0.029665
+  semicolon_per_word    0.027914
+   avg_paragraph_len    0.027883
+     uppercase_ratio    0.025114
+     long_word_ratio    0.023761
+         hapax_ratio    0.021219
+      bigram_entropy    0.021182
+2026-03-14 15:15:26,885 | INFO | 
+Feature importance saved to E:\final_project\models\xgboost\feature_importance.csv
+2026-03-14 15:15:27,052 | INFO | Model saved to E:\final_project\models\xgboost\xgb_model.json
+2026-03-14 15:15:27,052 | INFO | Eval report saved to E:\final_project\models\xgboost\eval_report.txt
+2026-03-14 15:15:27,052 | INFO |  
+2026-03-14 15:15:27,052 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-14 15:15:27,052 | INFO | SUMMARY
+2026-03-14 15:15:27,052 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-14 15:15:27,052 | INFO | Val  F1      : 0.8780
+2026-03-14 15:15:27,052 | INFO | Val  AUC-ROC : 0.9539
+2026-03-14 15:15:27,052 | INFO | Test F1      : 0.8821
+2026-03-14 15:15:27,052 | INFO | Test AUC-ROC : 0.9541
+2026-03-14 15:15:27,052 | INFO | Model        : E:\final_project\models\xgboost\xgb_model.json
+2026-03-14 15:15:27,052 | INFO | Done!
+2026-03-15 00:37:28,537 | INFO | ============================================================
+2026-03-15 00:37:28,537 | INFO | XGBoost Stylometric Classifier Training
+2026-03-15 00:37:28,537 | INFO | ============================================================
+2026-03-15 00:37:28,552 | INFO | No pruned feature file found — using all 39 features (first run).
+2026-03-15 00:37:28,552 | INFO | Loading CSVs ...
+2026-03-15 00:37:29,382 | INFO | Train: 63968  Val: 13708  Test: 13708
+2026-03-15 00:37:29,382 | INFO | Extracting features for 'train' split (63968 texts, 39 features) ...
+2026-03-15 00:39:33,759 | INFO |   Saved cache: E:\final_project\data\processed\train_features_39f.npy  E:\final_project\data\processed\train_labels.npy
+2026-03-15 00:39:33,759 | INFO | Extracting features for 'val' split (13708 texts, 39 features) ...
+2026-03-15 00:39:59,992 | INFO |   Saved cache: E:\final_project\data\processed\val_features_39f.npy  E:\final_project\data\processed\val_labels.npy
+2026-03-15 00:39:59,992 | INFO | Extracting features for 'test' split (13708 texts, 39 features) ...
+2026-03-15 00:40:26,660 | INFO |   Saved cache: E:\final_project\data\processed\test_features_39f.npy  E:\final_project\data\processed\test_labels.npy
+2026-03-15 00:40:26,660 | INFO | Feature matrix: train=(63968, 39)  val=(13708, 39)  test=(13708, 39)
+2026-03-15 00:40:26,660 | INFO | Fitting StandardScaler on train features ...
+2026-03-15 00:40:26,681 | INFO | Scaler saved to E:\final_project\models\xgboost\scaler.pkl
+2026-03-15 00:40:26,681 | INFO |  
+2026-03-15 00:40:26,681 | INFO | Training XGBoost (FIRST (all features) run) ...
+2026-03-15 00:40:31,836 | INFO | Best iteration: 998
+2026-03-15 00:40:31,836 | INFO |  
+2026-03-15 00:40:31,836 | INFO | -- Evaluation --
+2026-03-15 00:40:31,961 | INFO | TRAIN  | acc=0.9624  f1=0.9620  prec=0.9729  rec=0.9513  auc=0.9943
+2026-03-15 00:40:31,998 | INFO | VAL    | acc=0.8812  f1=0.8780  prec=0.9019  rec=0.8554  auc=0.9539
+2026-03-15 00:40:32,026 | INFO | TEST   | acc=0.8839  f1=0.8821  prec=0.8954  rec=0.8693  auc=0.9541
+2026-03-15 00:40:32,060 | INFO | 
+Classification report (test):
+              precision    recall  f1-score   support
+
+       human       0.87      0.90      0.89      6854
+          AI       0.90      0.87      0.88      6854
+
+    accuracy                           0.88     13708
+   macro avg       0.88      0.88      0.88     13708
+weighted avg       0.88      0.88      0.88     13708
+
+2026-03-15 00:40:32,060 | INFO | Confusion matrix (test):
+[[6158  696]
+ [ 896 5958]]
+2026-03-15 00:40:32,065 | INFO | 
+Top 15 most important features:
+2026-03-15 00:40:32,070 | INFO | 
+             feature  importance
+   ai_filler_density    0.100747
+     ai_filler_count    0.084176
+  avg_word_len_chars    0.069236
+exclamation_per_word    0.066373
+ repeat_phrase_ratio    0.038469
+        min_sent_len    0.034125
+          word_count    0.032814
+     unigram_entropy    0.032359
+          sent_count    0.029665
+  semicolon_per_word    0.027914
+   avg_paragraph_len    0.027883
+     uppercase_ratio    0.025114
+     long_word_ratio    0.023761
+         hapax_ratio    0.021219
+      bigram_entropy    0.021182
+2026-03-15 00:40:32,073 | INFO | Feature importance saved to E:\final_project\models\xgboost\feature_importance.csv
+2026-03-15 00:40:32,073 | INFO |  
+2026-03-15 00:40:32,073 | INFO | ── Auto-pruning (threshold=0.010) ──────────────────────────
+2026-03-15 00:40:32,073 | INFO | Total features : 39
+2026-03-15 00:40:32,074 | INFO | Kept           : 38
+2026-03-15 00:40:32,074 | INFO | Pruned         : 1  ['paragraph_count']
+2026-03-15 00:40:32,074 | INFO | Pruned feature list saved to E:\final_project\models\xgboost\pruned_features.json
+2026-03-15 00:40:32,074 | INFO |  
+2026-03-15 00:40:32,074 | INFO | >>> Re-run train_xgboost.py to train on the pruned feature set.
+2026-03-15 00:40:32,074 | INFO |     Cache will be automatically invalidated (different filename).
+2026-03-15 00:40:32,237 | INFO | Model saved to E:\final_project\models\xgboost\xgb_model.json
+2026-03-15 00:40:32,237 | INFO | Active feature list saved to E:\final_project\models\xgboost\active_features.json
+2026-03-15 00:40:32,237 | INFO | Eval report saved to E:\final_project\models\xgboost\eval_report.txt
+2026-03-15 00:40:32,237 | INFO |  
+2026-03-15 00:40:32,237 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-15 00:40:32,237 | INFO | SUMMARY  (39 features)
+2026-03-15 00:40:32,237 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-15 00:40:32,237 | INFO | Val  F1      : 0.8780
+2026-03-15 00:40:32,237 | INFO | Val  AUC-ROC : 0.9539
+2026-03-15 00:40:32,237 | INFO | Test F1      : 0.8821
+2026-03-15 00:40:32,237 | INFO | Test AUC-ROC : 0.9541
+2026-03-15 00:40:32,237 | INFO | Model        : E:\final_project\models\xgboost\xgb_model.json
+2026-03-15 00:40:32,237 | INFO |  
+2026-03-15 00:40:32,237 | INFO | NEXT STEP: Re-run train_xgboost.py to use pruned features.
+2026-03-15 00:40:32,237 | INFO | Done!
+2026-03-15 00:43:49,354 | INFO | ============================================================
+2026-03-15 00:43:49,355 | INFO | XGBoost Stylometric Classifier Training
+2026-03-15 00:43:49,355 | INFO | ============================================================
+2026-03-15 00:43:49,356 | INFO | Loaded pruned feature set (38 features) from E:\final_project\models\xgboost\pruned_features.json
+2026-03-15 00:43:49,356 | INFO | Loading CSVs ...
+2026-03-15 00:43:49,965 | INFO | Train: 63968  Val: 13708  Test: 13708
+2026-03-15 00:43:49,965 | INFO | Extracting features for 'train' split (63968 texts, 38 features) ...
+2026-03-15 00:45:53,742 | INFO |   Saved cache: E:\final_project\data\processed\train_features_38f.npy  E:\final_project\data\processed\train_labels.npy
+2026-03-15 00:45:53,745 | INFO | Extracting features for 'val' split (13708 texts, 38 features) ...
+2026-03-15 00:46:19,984 | INFO |   Saved cache: E:\final_project\data\processed\val_features_38f.npy  E:\final_project\data\processed\val_labels.npy
+2026-03-15 00:46:19,984 | INFO | Extracting features for 'test' split (13708 texts, 38 features) ...
+2026-03-15 00:46:45,631 | INFO |   Saved cache: E:\final_project\data\processed\test_features_38f.npy  E:\final_project\data\processed\test_labels.npy
+2026-03-15 00:46:45,631 | INFO | Feature matrix: train=(63968, 38)  val=(13708, 38)  test=(13708, 38)
+2026-03-15 00:46:45,631 | INFO | Fitting StandardScaler on train features ...
+2026-03-15 00:46:45,646 | INFO | Scaler saved to E:\final_project\models\xgboost\scaler.pkl
+2026-03-15 00:46:45,646 | INFO |  
+2026-03-15 00:46:45,646 | INFO | Training XGBoost (PRUNED run) ...
+2026-03-15 00:46:50,874 | INFO | Best iteration: 999
+2026-03-15 00:46:50,874 | INFO |  
+2026-03-15 00:46:50,874 | INFO | -- Evaluation --
+2026-03-15 00:46:50,994 | INFO | TRAIN  | acc=0.9632  f1=0.9628  prec=0.9734  rec=0.9525  auc=0.9945
+2026-03-15 00:46:51,032 | INFO | VAL    | acc=0.8823  f1=0.8792  prec=0.9023  rec=0.8573  auc=0.9538
+2026-03-15 00:46:51,064 | INFO | TEST   | acc=0.8817  f1=0.8802  prec=0.8920  rec=0.8687  auc=0.9543
+2026-03-15 00:46:51,087 | INFO | 
+Classification report (test):
+              precision    recall  f1-score   support
+
+       human       0.87      0.89      0.88      6854
+          AI       0.89      0.87      0.88      6854
+
+    accuracy                           0.88     13708
+   macro avg       0.88      0.88      0.88     13708
+weighted avg       0.88      0.88      0.88     13708
+
+2026-03-15 00:46:51,087 | INFO | Confusion matrix (test):
+[[6133  721]
+ [ 900 5954]]
+2026-03-15 00:46:51,097 | INFO | 
+Top 15 most important features:
+2026-03-15 00:46:51,103 | INFO | 
+             feature  importance
+   ai_filler_density    0.107506
+  avg_word_len_chars    0.064062
+exclamation_per_word    0.063596
+   avg_paragraph_len    0.052873
+ repeat_phrase_ratio    0.038550
+     ai_filler_count    0.037978
+        min_sent_len    0.033504
+     unigram_entropy    0.032707
+          sent_count    0.031581
+     long_word_ratio    0.031326
+          word_count    0.030262
+  semicolon_per_word    0.028212
+     uppercase_ratio    0.026628
+   unique_word_ratio    0.022728
+      bigram_entropy    0.022606
+2026-03-15 00:46:51,106 | INFO | Feature importance saved to E:\final_project\models\xgboost\feature_importance.csv
+2026-03-15 00:46:51,272 | INFO | Model saved to E:\final_project\models\xgboost\xgb_model.json
+2026-03-15 00:46:51,272 | INFO | Active feature list saved to E:\final_project\models\xgboost\active_features.json
+2026-03-15 00:46:51,272 | INFO | Eval report saved to E:\final_project\models\xgboost\eval_report.txt
+2026-03-15 00:46:51,272 | INFO |  
+2026-03-15 00:46:51,272 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-15 00:46:51,272 | INFO | SUMMARY  (38 features)
+2026-03-15 00:46:51,272 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-15 00:46:51,272 | INFO | Val  F1      : 0.8792
+2026-03-15 00:46:51,272 | INFO | Val  AUC-ROC : 0.9538
+2026-03-15 00:46:51,272 | INFO | Test F1      : 0.8802
+2026-03-15 00:46:51,272 | INFO | Test AUC-ROC : 0.9543
+2026-03-15 00:46:51,272 | INFO | Model        : E:\final_project\models\xgboost\xgb_model.json
+2026-03-15 00:46:51,272 | INFO | Done!
+2026-03-17 00:20:42,498 | INFO | ============================================================
+2026-03-17 00:20:42,498 | INFO | XGBoost Stylometric Classifier Training
+2026-03-17 00:20:42,498 | INFO | ============================================================
+2026-03-17 00:20:42,498 | INFO | No pruned feature file found — using all 39 features (first run).
+2026-03-17 00:20:42,498 | INFO | Loading CSVs ...
+2026-03-17 00:20:43,927 | INFO | Train: 120022  Val: 25719  Test: 25719
+2026-03-17 00:20:43,927 | INFO | Extracting features for 'train' split (120022 texts, 39 features) ...
+2026-03-17 00:25:05,562 | INFO |   Saved cache: E:\final_project\data\processed\train_features_39f.npy  E:\final_project\data\processed\train_labels.npy
+2026-03-17 00:25:05,562 | INFO | Extracting features for 'val' split (25719 texts, 39 features) ...
+2026-03-17 00:26:01,315 | INFO |   Saved cache: E:\final_project\data\processed\val_features_39f.npy  E:\final_project\data\processed\val_labels.npy
+2026-03-17 00:26:01,317 | INFO | Extracting features for 'test' split (25719 texts, 39 features) ...
+2026-03-17 00:26:57,253 | INFO |   Saved cache: E:\final_project\data\processed\test_features_39f.npy  E:\final_project\data\processed\test_labels.npy
+2026-03-17 00:26:57,253 | INFO | Feature matrix: train=(120022, 39)  val=(25719, 39)  test=(25719, 39)
+2026-03-17 00:26:57,255 | INFO | Fitting StandardScaler on train features ...
+2026-03-17 00:26:57,300 | INFO | Scaler saved to E:\final_project\models\xgboost\scaler.pkl
+2026-03-17 00:26:57,300 | INFO |  
+2026-03-17 00:26:57,300 | INFO | Training XGBoost (FIRST (all features) run) ...
+2026-03-17 00:27:05,150 | INFO | Best iteration: 998
+2026-03-17 00:27:05,150 | INFO |  
+2026-03-17 00:27:05,150 | INFO | -- Evaluation --
+2026-03-17 00:27:05,394 | INFO | TRAIN  | acc=0.9544  f1=0.9541  prec=0.9595  rec=0.9488  auc=0.9918
+2026-03-17 00:27:05,463 | INFO | VAL    | acc=0.8950  f1=0.8944  prec=0.8994  rec=0.8895  auc=0.9634
+2026-03-17 00:27:05,518 | INFO | TEST   | acc=0.8962  f1=0.8954  prec=0.9018  rec=0.8892  auc=0.9643
+2026-03-17 00:27:05,564 | INFO | 
+Classification report (test):
+              precision    recall  f1-score   support
+
+       human       0.89      0.90      0.90     12860
+          AI       0.90      0.89      0.90     12859
+
+    accuracy                           0.90     25719
+   macro avg       0.90      0.90      0.90     25719
+weighted avg       0.90      0.90      0.90     25719
+
+2026-03-17 00:27:05,565 | INFO | Confusion matrix (test):
+[[11615  1245]
+ [ 1425 11434]]
+2026-03-17 00:27:05,570 | INFO | 
+Top 15 most important features:
+2026-03-17 00:27:05,573 | INFO | 
+             feature  importance
+  std_word_len_chars    0.156822
+   ai_filler_density    0.057634
+exclamation_per_word    0.053813
+     unigram_entropy    0.051916
+     ai_filler_count    0.043401
+          sent_count    0.040467
+ repeat_phrase_ratio    0.032686
+     long_word_ratio    0.032548
+  semicolon_per_word    0.026325
+          word_count    0.025660
+      bigram_entropy    0.024159
+      comma_per_word    0.023947
+      colon_per_word    0.023732
+        min_sent_len    0.023676
+  avg_word_len_chars    0.022434
+2026-03-17 00:27:05,575 | INFO | Feature importance saved to E:\final_project\models\xgboost\feature_importance.csv
+2026-03-17 00:27:05,576 | INFO |  
+2026-03-17 00:27:05,576 | INFO | ── Auto-pruning (threshold=0.010) ──────────────────────────
+2026-03-17 00:27:05,576 | INFO | Total features : 39
+2026-03-17 00:27:05,577 | INFO | Kept           : 38
+2026-03-17 00:27:05,577 | INFO | Pruned         : 1  ['paragraph_count']
+2026-03-17 00:27:05,577 | INFO | Pruned feature list saved to E:\final_project\models\xgboost\pruned_features.json
+2026-03-17 00:27:05,577 | INFO |  
+2026-03-17 00:27:05,578 | INFO | >>> Re-run train_xgboost.py to train on the pruned feature set.
+2026-03-17 00:27:05,578 | INFO |     Cache will be automatically invalidated (different filename).
+2026-03-17 00:27:05,754 | INFO | Model saved to E:\final_project\models\xgboost\xgb_model.json
+2026-03-17 00:27:05,754 | INFO | Active feature list saved to E:\final_project\models\xgboost\active_features.json
+2026-03-17 00:27:05,754 | INFO | Eval report saved to E:\final_project\models\xgboost\eval_report.txt
+2026-03-17 00:27:05,754 | INFO |  
+2026-03-17 00:27:05,754 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-17 00:27:05,754 | INFO | SUMMARY  (39 features)
+2026-03-17 00:27:05,754 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-17 00:27:05,754 | INFO | Val  F1      : 0.8944
+2026-03-17 00:27:05,754 | INFO | Val  AUC-ROC : 0.9634
+2026-03-17 00:27:05,754 | INFO | Test F1      : 0.8954
+2026-03-17 00:27:05,754 | INFO | Test AUC-ROC : 0.9643
+2026-03-17 00:27:05,754 | INFO | Model        : E:\final_project\models\xgboost\xgb_model.json
+2026-03-17 00:27:05,754 | INFO |  
+2026-03-17 00:27:05,754 | INFO | NEXT STEP: Re-run train_xgboost.py to use pruned features.
+2026-03-17 00:27:05,754 | INFO | Done!
+2026-03-17 00:27:35,627 | INFO | ============================================================
+2026-03-17 00:27:35,639 | INFO | XGBoost Stylometric Classifier Training
+2026-03-17 00:27:35,639 | INFO | ============================================================
+2026-03-17 00:27:35,639 | INFO | Loaded pruned feature set (38 features) from E:\final_project\models\xgboost\pruned_features.json
+2026-03-17 00:27:35,639 | INFO | Loading CSVs ...
+2026-03-17 00:27:37,121 | INFO | Train: 120022  Val: 25719  Test: 25719
+2026-03-17 00:27:37,121 | INFO | Extracting features for 'train' split (120022 texts, 38 features) ...
+2026-03-17 00:31:55,464 | INFO |   Saved cache: E:\final_project\data\processed\train_features_38f.npy  E:\final_project\data\processed\train_labels.npy
+2026-03-17 00:31:55,471 | INFO | Extracting features for 'val' split (25719 texts, 38 features) ...
+2026-03-17 00:32:52,337 | INFO |   Saved cache: E:\final_project\data\processed\val_features_38f.npy  E:\final_project\data\processed\val_labels.npy
+2026-03-17 00:32:52,337 | INFO | Extracting features for 'test' split (25719 texts, 38 features) ...
+2026-03-17 00:33:48,308 | INFO |   Saved cache: E:\final_project\data\processed\test_features_38f.npy  E:\final_project\data\processed\test_labels.npy
+2026-03-17 00:33:48,310 | INFO | Feature matrix: train=(120022, 38)  val=(25719, 38)  test=(25719, 38)
+2026-03-17 00:33:48,310 | INFO | Fitting StandardScaler on train features ...
+2026-03-17 00:33:48,352 | INFO | Scaler saved to E:\final_project\models\xgboost\scaler.pkl
+2026-03-17 00:33:48,352 | INFO |  
+2026-03-17 00:33:48,352 | INFO | Training XGBoost (PRUNED run) ...
+2026-03-17 00:33:56,123 | INFO | Best iteration: 999
+2026-03-17 00:33:56,123 | INFO |  
+2026-03-17 00:33:56,123 | INFO | -- Evaluation --
+2026-03-17 00:33:56,372 | INFO | TRAIN  | acc=0.9544  f1=0.9542  prec=0.9592  rec=0.9491  auc=0.9917
+2026-03-17 00:33:56,439 | INFO | VAL    | acc=0.8960  f1=0.8954  prec=0.9006  rec=0.8903  auc=0.9635
+2026-03-17 00:33:56,494 | INFO | TEST   | acc=0.8959  f1=0.8953  prec=0.9002  rec=0.8905  auc=0.9644
+2026-03-17 00:33:56,539 | INFO | 
+Classification report (test):
+              precision    recall  f1-score   support
+
+       human       0.89      0.90      0.90     12860
+          AI       0.90      0.89      0.90     12859
+
+    accuracy                           0.90     25719
+   macro avg       0.90      0.90      0.90     25719
+weighted avg       0.90      0.90      0.90     25719
+
+2026-03-17 00:33:56,539 | INFO | Confusion matrix (test):
+[[11591  1269]
+ [ 1408 11451]]
+2026-03-17 00:33:56,543 | INFO | 
+Top 15 most important features:
+2026-03-17 00:33:56,545 | INFO | 
+             feature  importance
+  std_word_len_chars    0.163681
+   ai_filler_density    0.059657
+exclamation_per_word    0.053441
+     unigram_entropy    0.052390
+          sent_count    0.036241
+     long_word_ratio    0.034083
+ repeat_phrase_ratio    0.031077
+     ai_filler_count    0.028530
+   avg_paragraph_len    0.026858
+  semicolon_per_word    0.026287
+          word_count    0.024713
+      bigram_entropy    0.024324
+      colon_per_word    0.024300
+      comma_per_word    0.024143
+        min_sent_len    0.023407
+2026-03-17 00:33:56,547 | INFO | Feature importance saved to E:\final_project\models\xgboost\feature_importance.csv
+2026-03-17 00:33:56,743 | INFO | Model saved to E:\final_project\models\xgboost\xgb_model.json
+2026-03-17 00:33:56,747 | INFO | Active feature list saved to E:\final_project\models\xgboost\active_features.json
+2026-03-17 00:33:56,747 | INFO | Eval report saved to E:\final_project\models\xgboost\eval_report.txt
+2026-03-17 00:33:56,747 | INFO |  
+2026-03-17 00:33:56,749 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-17 00:33:56,749 | INFO | SUMMARY  (38 features)
+2026-03-17 00:33:56,749 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-17 00:33:56,749 | INFO | Val  F1      : 0.8954
+2026-03-17 00:33:56,749 | INFO | Val  AUC-ROC : 0.9635
+2026-03-17 00:33:56,749 | INFO | Test F1      : 0.8953
+2026-03-17 00:33:56,749 | INFO | Test AUC-ROC : 0.9644
+2026-03-17 00:33:56,749 | INFO | Model        : E:\final_project\models\xgboost\xgb_model.json
+2026-03-17 00:33:56,749 | INFO | Done!
+2026-03-19 16:56:45,243 | INFO | ============================================================
+2026-03-19 16:56:45,243 | INFO | XGBoost Stylometric Classifier Training
+2026-03-19 16:56:45,243 | INFO | ============================================================
+2026-03-19 16:56:45,243 | INFO | No pruned feature file found — using all 39 features (first run).
+2026-03-19 16:56:45,243 | INFO | Loading CSVs ...
+2026-03-19 16:56:46,432 | INFO | Train: 119949  Val: 25703  Test: 25704
+2026-03-19 16:56:46,432 | INFO | Extracting features for 'train' split (119949 texts, 39 features) ...
+2026-03-19 17:00:25,792 | INFO |   Saved cache: E:\final_project\data\processed\train_features_39f.npy  E:\final_project\data\processed\train_labels.npy
+2026-03-19 17:00:25,792 | INFO | Extracting features for 'val' split (25703 texts, 39 features) ...
+2026-03-19 17:01:11,833 | INFO |   Saved cache: E:\final_project\data\processed\val_features_39f.npy  E:\final_project\data\processed\val_labels.npy
+2026-03-19 17:01:11,833 | INFO | Extracting features for 'test' split (25704 texts, 39 features) ...
+2026-03-19 17:01:58,878 | INFO |   Saved cache: E:\final_project\data\processed\test_features_39f.npy  E:\final_project\data\processed\test_labels.npy
+2026-03-19 17:01:58,878 | INFO | Feature matrix: train=(119949, 39)  val=(25703, 39)  test=(25704, 39)
+2026-03-19 17:01:58,878 | INFO | Fitting StandardScaler on train features ...
+2026-03-19 17:01:58,924 | INFO | Scaler saved to E:\final_project\models\xgboost\scaler.pkl
+2026-03-19 17:01:58,924 | INFO |  
+2026-03-19 17:01:58,924 | INFO | Training XGBoost (FIRST (all features) run) ...
+2026-03-19 17:02:06,636 | INFO | Best iteration: 999
+2026-03-19 17:02:06,636 | INFO |  
+2026-03-19 17:02:06,636 | INFO | -- Evaluation --
+2026-03-19 17:02:06,878 | INFO | TRAIN  | acc=0.9282  f1=0.9270  prec=0.9425  rec=0.9120  auc=0.9815
+2026-03-19 17:02:06,942 | INFO | VAL    | acc=0.8610  f1=0.8581  prec=0.8767  rec=0.8402  auc=0.9395
+2026-03-19 17:02:06,996 | INFO | TEST   | acc=0.8604  f1=0.8577  prec=0.8749  rec=0.8412  auc=0.9391
+2026-03-19 17:02:07,047 | INFO | 
+Classification report (test):
+              precision    recall  f1-score   support
+
+       human       0.85      0.88      0.86     12852
+          AI       0.87      0.84      0.86     12852
+
+    accuracy                           0.86     25704
+   macro avg       0.86      0.86      0.86     25704
+weighted avg       0.86      0.86      0.86     25704
+
+2026-03-19 17:02:07,047 | INFO | Confusion matrix (test):
+[[11306  1546]
+ [ 2041 10811]]
+2026-03-19 17:02:07,049 | INFO | 
+Top 15 most important features:
+2026-03-19 17:02:07,057 | INFO | 
+             feature  importance
+   ai_filler_density    0.155713
+     ai_filler_count    0.114182
+exclamation_per_word    0.060855
+  avg_word_len_chars    0.046835
+    hedge_word_ratio    0.040266
+ repeat_phrase_ratio    0.038218
+          sent_count    0.034904
+         digit_ratio    0.034439
+     unigram_entropy    0.027732
+  semicolon_per_word    0.027615
+      colon_per_word    0.026684
+          word_count    0.026164
+   avg_paragraph_len    0.022634
+          burstiness    0.020509
+         hapax_ratio    0.019674
+2026-03-19 17:02:07,059 | INFO | Feature importance saved to E:\final_project\models\xgboost\feature_importance.csv
+2026-03-19 17:02:07,059 | INFO |  
+2026-03-19 17:02:07,059 | INFO | ── Auto-pruning (threshold=0.010) ──────────────────────────
+2026-03-19 17:02:07,059 | INFO | Total features : 39
+2026-03-19 17:02:07,059 | INFO | Kept           : 35
+2026-03-19 17:02:07,059 | INFO | Pruned         : 4  ['flesch_kincaid_grade', 'gunning_fog', 'avg_sent_len_words', 'paragraph_count']
+2026-03-19 17:02:07,061 | INFO | Pruned feature list saved to E:\final_project\models\xgboost\pruned_features.json
+2026-03-19 17:02:07,061 | INFO |  
+2026-03-19 17:02:07,061 | INFO | >>> Re-run train_xgboost.py to train on the pruned feature set.
+2026-03-19 17:02:07,061 | INFO |     Cache will be automatically invalidated (different filename).
+2026-03-19 17:02:07,241 | INFO | Model saved to E:\final_project\models\xgboost\xgb_model.json
+2026-03-19 17:02:07,257 | INFO | Active feature list saved to E:\final_project\models\xgboost\active_features.json
+2026-03-19 17:02:07,257 | INFO | Eval report saved to E:\final_project\models\xgboost\eval_report.txt
+2026-03-19 17:02:07,257 | INFO |  
+2026-03-19 17:02:07,257 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-19 17:02:07,257 | INFO | SUMMARY  (39 features)
+2026-03-19 17:02:07,257 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-19 17:02:07,257 | INFO | Val  F1      : 0.8581
+2026-03-19 17:02:07,257 | INFO | Val  AUC-ROC : 0.9395
+2026-03-19 17:02:07,257 | INFO | Test F1      : 0.8577
+2026-03-19 17:02:07,257 | INFO | Test AUC-ROC : 0.9391
+2026-03-19 17:02:07,257 | INFO | Model        : E:\final_project\models\xgboost\xgb_model.json
+2026-03-19 17:02:07,257 | INFO |  
+2026-03-19 17:02:07,257 | INFO | NEXT STEP: Re-run train_xgboost.py to use pruned features.
+2026-03-19 17:02:07,260 | INFO | Done!
+2026-03-19 17:02:18,100 | INFO | ============================================================
+2026-03-19 17:02:18,100 | INFO | XGBoost Stylometric Classifier Training
+2026-03-19 17:02:18,100 | INFO | ============================================================
+2026-03-19 17:02:18,100 | INFO | Loaded pruned feature set (35 features) from E:\final_project\models\xgboost\pruned_features.json
+2026-03-19 17:02:18,100 | INFO | Loading CSVs ...
+2026-03-19 17:02:19,396 | INFO | Train: 119949  Val: 25703  Test: 25704
+2026-03-19 17:02:19,396 | INFO | Extracting features for 'train' split (119949 texts, 35 features) ...
+2026-03-19 17:05:57,274 | INFO |   Saved cache: E:\final_project\data\processed\train_features_35f.npy  E:\final_project\data\processed\train_labels.npy
+2026-03-19 17:05:57,274 | INFO | Extracting features for 'val' split (25703 texts, 35 features) ...
+2026-03-19 17:06:44,457 | INFO |   Saved cache: E:\final_project\data\processed\val_features_35f.npy  E:\final_project\data\processed\val_labels.npy
+2026-03-19 17:06:44,457 | INFO | Extracting features for 'test' split (25704 texts, 35 features) ...
+2026-03-19 17:07:32,165 | INFO |   Saved cache: E:\final_project\data\processed\test_features_35f.npy  E:\final_project\data\processed\test_labels.npy
+2026-03-19 17:07:32,165 | INFO | Feature matrix: train=(119949, 35)  val=(25703, 35)  test=(25704, 35)
+2026-03-19 17:07:32,165 | INFO | Fitting StandardScaler on train features ...
+2026-03-19 17:07:32,208 | INFO | Scaler saved to E:\final_project\models\xgboost\scaler.pkl
+2026-03-19 17:07:32,208 | INFO |  
+2026-03-19 17:07:32,208 | INFO | Training XGBoost (PRUNED run) ...
+2026-03-19 17:07:44,157 | INFO | Best iteration: 999
+2026-03-19 17:07:44,157 | INFO |  
+2026-03-19 17:07:44,157 | INFO | -- Evaluation --
+2026-03-19 17:07:44,512 | INFO | TRAIN  | acc=0.9235  f1=0.9223  prec=0.9373  rec=0.9077  auc=0.9791
+2026-03-19 17:07:44,600 | INFO | VAL    | acc=0.8595  f1=0.8564  prec=0.8762  rec=0.8374  auc=0.9379
+2026-03-19 17:07:44,689 | INFO | TEST   | acc=0.8558  f1=0.8531  prec=0.8693  rec=0.8375  auc=0.9366
+2026-03-19 17:07:44,770 | INFO | 
+Classification report (test):
+              precision    recall  f1-score   support
+
+       human       0.84      0.87      0.86     12852
+          AI       0.87      0.84      0.85     12852
+
+    accuracy                           0.86     25704
+   macro avg       0.86      0.86      0.86     25704
+weighted avg       0.86      0.86      0.86     25704
+
+2026-03-19 17:07:44,770 | INFO | Confusion matrix (test):
+[[11234  1618]
+ [ 2089 10763]]
+2026-03-19 17:07:44,770 | INFO | 
+Top 15 most important features:
+2026-03-19 17:07:44,779 | INFO | 
+             feature  importance
+   ai_filler_density    0.176692
+     ai_filler_count    0.107200
+exclamation_per_word    0.057386
+  avg_word_len_chars    0.045161
+    hedge_word_ratio    0.040767
+ repeat_phrase_ratio    0.037630
+         digit_ratio    0.033446
+          sent_count    0.033083
+     unigram_entropy    0.029320
+  semicolon_per_word    0.028109
+   avg_paragraph_len    0.027917
+      colon_per_word    0.027546
+          word_count    0.027280
+          burstiness    0.021047
+         hapax_ratio    0.020632
+2026-03-19 17:07:44,784 | INFO | Feature importance saved to E:\final_project\models\xgboost\feature_importance.csv
+2026-03-19 17:07:45,024 | INFO | Model saved to E:\final_project\models\xgboost\xgb_model.json
+2026-03-19 17:07:45,024 | INFO | Active feature list saved to E:\final_project\models\xgboost\active_features.json
+2026-03-19 17:07:45,024 | INFO | Eval report saved to E:\final_project\models\xgboost\eval_report.txt
+2026-03-19 17:07:45,024 | INFO |  
+2026-03-19 17:07:45,024 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-19 17:07:45,024 | INFO | SUMMARY  (35 features)
+2026-03-19 17:07:45,024 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-19 17:07:45,024 | INFO | Val  F1      : 0.8564
+2026-03-19 17:07:45,024 | INFO | Val  AUC-ROC : 0.9379
+2026-03-19 17:07:45,024 | INFO | Test F1      : 0.8531
+2026-03-19 17:07:45,024 | INFO | Test AUC-ROC : 0.9366
+2026-03-19 17:07:45,024 | INFO | Model        : E:\final_project\models\xgboost\xgb_model.json
+2026-03-19 17:07:45,024 | INFO | Done!

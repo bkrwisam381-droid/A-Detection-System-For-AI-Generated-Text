@@ -1,0 +1,568 @@
+2026-03-14 15:18:12,281 | INFO | =======================================================
+2026-03-14 15:18:12,281 | INFO | Ensemble MLP Fusion Head Training
+2026-03-14 15:18:12,281 | INFO | =======================================================
+2026-03-14 15:18:12,304 | INFO | Device: cuda
+2026-03-14 15:18:12,304 | INFO | Loading data ...
+2026-03-14 15:18:13,010 | INFO | Total texts for signal extraction: 91384
+2026-03-14 15:18:13,011 | INFO |  
+2026-03-14 15:18:13,011 | INFO | Step 1/3 - DeBERTa inference ...
+2026-03-14 15:18:13,011 | INFO | Running DeBERTa inference on 91384 texts ...
+2026-03-14 15:19:50,509 | INFO | =======================================================
+2026-03-14 15:19:50,509 | INFO | Ensemble MLP Fusion Head Training
+2026-03-14 15:19:50,530 | INFO | =======================================================
+2026-03-14 15:19:50,567 | INFO | Device: cuda
+2026-03-14 15:19:50,568 | INFO | Loading data ...
+2026-03-14 15:19:51,383 | INFO | Total texts for signal extraction: 91384
+2026-03-14 15:19:51,383 | INFO |  
+2026-03-14 15:19:51,383 | INFO | Step 1/3 - DeBERTa inference ...
+2026-03-14 15:19:51,383 | INFO | Running DeBERTa inference on 91384 texts ...
+2026-03-14 15:38:10,120 | INFO | DeBERTa probs cached to E:\final_project\data\processed\deberta_probs_all.npy
+2026-03-14 15:38:10,167 | INFO |  
+2026-03-14 15:38:10,167 | INFO | Step 2/3 - XGBoost inference ...
+2026-03-14 15:38:10,168 | INFO | Running XGBoost inference on 91384 texts ...
+2026-03-14 15:41:07,021 | INFO | XGBoost probs cached.
+2026-03-14 15:41:07,021 | INFO |  
+2026-03-14 15:41:07,021 | INFO | Step 3/3 - Qwen2.5 perplexity scoring ...
+2026-03-14 15:41:07,021 | INFO | Loading Qwen2.5-1.5B for perplexity scoring ...
+2026-03-14 15:41:07,021 | INFO | Using 4-bit quantization (saves ~60% VRAM) ...
+2026-03-14 15:41:07,511 | INFO | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 15:41:07,511 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-14 15:41:07,557 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-1.5B/8faed761d45a263340a0528343f099c05c9a4323/config.json "HTTP/1.1 200 OK"
+2026-03-14 15:41:07,618 | INFO | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-1.5B/8faed761d45a263340a0528343f099c05c9a4323/config.json "HTTP/1.1 200 OK"
+2026-03-14 15:41:07,830 | INFO | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 15:41:07,881 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-1.5B/8faed761d45a263340a0528343f099c05c9a4323/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-14 15:41:07,930 | INFO | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-1.5B/8faed761d45a263340a0528343f099c05c9a4323/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-14 15:41:08,132 | INFO | HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-14 15:41:08,321 | INFO | HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-14 15:41:08,497 | INFO | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B/resolve/main/vocab.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 15:41:08,554 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-1.5B/8faed761d45a263340a0528343f099c05c9a4323/vocab.json "HTTP/1.1 200 OK"
+2026-03-14 15:41:08,602 | INFO | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-1.5B/8faed761d45a263340a0528343f099c05c9a4323/vocab.json "HTTP/1.1 200 OK"
+2026-03-14 15:41:09,053 | INFO | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B/resolve/main/merges.txt "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 15:41:09,114 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-1.5B/8faed761d45a263340a0528343f099c05c9a4323/merges.txt "HTTP/1.1 200 OK"
+2026-03-14 15:41:09,161 | INFO | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-1.5B/8faed761d45a263340a0528343f099c05c9a4323/merges.txt "HTTP/1.1 200 OK"
+2026-03-14 15:41:09,481 | INFO | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B/resolve/main/tokenizer.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 15:41:09,536 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-1.5B/8faed761d45a263340a0528343f099c05c9a4323/tokenizer.json "HTTP/1.1 200 OK"
+2026-03-14 15:41:09,574 | INFO | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-1.5B/8faed761d45a263340a0528343f099c05c9a4323/tokenizer.json "HTTP/1.1 200 OK"
+2026-03-14 15:41:10,073 | INFO | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B/resolve/main/added_tokens.json "HTTP/1.1 404 Not Found"
+2026-03-14 15:41:10,268 | INFO | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B/resolve/main/special_tokens_map.json "HTTP/1.1 404 Not Found"
+2026-03-14 15:41:10,455 | INFO | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B/resolve/main/chat_template.jinja "HTTP/1.1 404 Not Found"
+2026-03-14 15:41:11,071 | INFO | HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B "HTTP/1.1 200 OK"
+2026-03-14 15:41:11,252 | INFO | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 15:41:11,307 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-1.5B/8faed761d45a263340a0528343f099c05c9a4323/config.json "HTTP/1.1 200 OK"
+2026-03-14 15:41:12,526 | INFO | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-03-14 15:41:12,756 | INFO | HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B/xet-read-token/8faed761d45a263340a0528343f099c05c9a4323 "HTTP/1.1 200 OK"
+2026-03-14 15:47:39,525 | INFO | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-14 15:47:39,570 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-1.5B/8faed761d45a263340a0528343f099c05c9a4323/generation_config.json "HTTP/1.1 200 OK"
+2026-03-14 15:47:39,623 | INFO | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-1.5B/8faed761d45a263340a0528343f099c05c9a4323/generation_config.json "HTTP/1.1 200 OK"
+2026-03-14 15:47:39,826 | INFO | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B/resolve/main/custom_generate/generate.py "HTTP/1.1 404 Not Found"
+2026-03-14 15:49:14,805 | INFO | Qwen2.5 scores cached.
+2026-03-14 15:49:14,828 | INFO |  
+2026-03-14 15:49:14,828 | INFO | Step 4/4 - Calibrating probabilities ...
+2026-03-14 15:49:14,828 | INFO | Calibrating probabilities with isotonic regression ...
+2026-03-14 15:58:37,125 | INFO | =======================================================
+2026-03-14 15:58:37,126 | INFO | Ensemble MLP Fusion Head Training
+2026-03-14 15:58:37,126 | INFO | =======================================================
+2026-03-14 15:58:37,137 | INFO | Device: cuda
+2026-03-14 15:58:37,138 | INFO | Loading data ...
+2026-03-14 15:58:37,858 | INFO | Total texts for signal extraction: 91384
+2026-03-14 15:58:37,858 | INFO |  
+2026-03-14 15:58:37,858 | INFO | Step 1/3 - DeBERTa inference ...
+2026-03-14 15:58:37,858 | INFO | Loading cached DeBERTa probabilities ...
+2026-03-14 15:58:37,858 | INFO |  
+2026-03-14 15:58:37,858 | INFO | Step 2/3 - XGBoost inference ...
+2026-03-14 15:58:37,858 | INFO | Loading cached XGBoost probabilities ...
+2026-03-14 15:58:37,858 | INFO |  
+2026-03-14 15:58:37,858 | INFO | Step 3/3 - Qwen2.5 perplexity scoring ...
+2026-03-14 15:58:37,861 | INFO | Loading cached Qwen2.5 perplexity scores ...
+2026-03-14 15:58:37,871 | INFO |  
+2026-03-14 15:58:37,871 | INFO | Step 4/4 - Calibrating probabilities ...
+2026-03-14 15:58:37,888 | INFO |  
+2026-03-14 15:58:37,888 | INFO | Building signal matrix ...
+2026-03-14 15:58:37,892 | INFO | Signal matrix shape: (91384, 5)
+2026-03-14 15:58:37,892 | INFO | Columns: DeBERTa_prob | XGB_prob | Qwen_ppl | Qwen_burst | XGB_conf
+2026-03-14 15:58:37,892 | INFO |  
+2026-03-14 15:58:38,120 | INFO | Training MLP fusion head for up to 50 epochs ...
+2026-03-14 15:58:45,658 | INFO | Epoch  10 | val_loss=0.1674 | val_f1=0.9437
+2026-03-14 15:58:46,392 | INFO | Early stopping at epoch 11
+2026-03-14 15:58:46,395 | INFO |  
+2026-03-14 15:58:46,395 | INFO | -- Final evaluation --
+2026-03-14 15:58:46,433 | INFO | TRAIN  | acc=0.9821  f1=0.9822  prec=0.9793  rec=0.9851  auc=0.9982
+2026-03-14 15:58:46,445 | INFO | VAL    | acc=0.9452  f1=0.9450  prec=0.9489  rec=0.9411  auc=0.9892
+2026-03-14 15:58:46,457 | INFO | TEST   | acc=0.9440  f1=0.9440  prec=0.9436  rec=0.9444  auc=0.9884
+2026-03-14 15:58:46,471 | INFO | MLP saved to E:\final_project\models\ensemble\mlp_fusion.pt
+2026-03-14 15:58:46,471 | INFO | Report saved to E:\final_project\models\ensemble\eval_report.txt
+2026-03-14 15:58:46,474 | INFO |  
+2026-03-14 15:58:46,474 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-14 15:58:46,474 | INFO | ENSEMBLE FINAL RESULTS
+2026-03-14 15:58:46,474 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-14 15:58:46,474 | INFO | Val  F1      : 0.9450
+2026-03-14 15:58:46,475 | INFO | Val  AUC-ROC : 0.9892
+2026-03-14 15:58:46,475 | INFO | Test F1      : 0.9440
+2026-03-14 15:58:46,475 | INFO | Test AUC-ROC : 0.9884
+2026-03-14 15:58:46,475 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-14 15:58:46,475 | INFO | Done!
+2026-03-15 00:49:29,575 | INFO | ============================================================
+2026-03-15 00:49:29,575 | INFO | Ensemble MLP Fusion Head Training
+2026-03-15 00:49:29,575 | INFO | ============================================================
+2026-03-15 00:49:29,592 | INFO | Device: cuda
+2026-03-15 00:49:29,592 | INFO | Loading data ...
+2026-03-15 00:49:30,204 | INFO | Total texts for signal extraction: 91384
+2026-03-15 00:49:30,204 | INFO |  
+2026-03-15 00:49:30,204 | INFO | Step 1/4 - DeBERTa inference ...
+2026-03-15 00:49:30,204 | INFO | Running DeBERTa inference on 91384 texts ...
+2026-03-15 01:41:14,044 | INFO | DeBERTa probs cached to E:\final_project\data\processed\deberta_probs_all.npy
+2026-03-15 01:41:14,092 | INFO |  
+2026-03-15 01:41:14,093 | INFO | Step 2/4 - XGBoost inference ...
+2026-03-15 01:41:14,093 | INFO | Running XGBoost inference on 91384 texts ...
+2026-03-15 01:41:14,542 | INFO | Using 38 active XGB features from E:\final_project\models\xgboost\active_features.json
+2026-03-15 01:44:11,313 | INFO | XGBoost probs cached.
+2026-03-15 01:44:11,313 | INFO |  
+2026-03-15 01:44:11,313 | INFO | Step 3/4 - Qwen2.5 perplexity scoring ...
+2026-03-15 01:44:11,318 | INFO | Loading cached Qwen2.5 perplexity scores ...
+2026-03-15 01:44:11,354 | INFO |  
+2026-03-15 01:44:11,354 | INFO | Step 4/4 - Calibrating probabilities ...
+2026-03-15 01:44:11,355 | INFO | Calibrating probabilities with isotonic regression ...
+2026-03-15 01:44:11,369 | INFO | Calibration complete.
+2026-03-15 01:44:11,369 | INFO |  
+2026-03-15 01:44:11,369 | INFO | Building signal matrix ...
+2026-03-15 01:44:11,369 | INFO | Signal matrix shape: (91384, 5)
+2026-03-15 01:44:11,369 | INFO | Columns: DeBERTa_prob | XGB_prob | Qwen_ppl | Qwen_burst | XGB_conf
+2026-03-15 01:44:11,369 | INFO |  
+2026-03-15 01:44:11,470 | INFO | Training MLP fusion head for up to 50 epochs ...
+2026-03-15 01:44:19,600 | INFO | Epoch  10 | val_loss=0.1716 | val_f1=0.9434
+2026-03-15 01:44:20,357 | INFO | Early stopping at epoch 11
+2026-03-15 01:44:20,357 | INFO |  
+2026-03-15 01:44:20,357 | INFO | -- Final evaluation --
+2026-03-15 01:44:20,403 | INFO | TRAIN  | acc=0.9808  f1=0.9809  prec=0.9747  rec=0.9872  auc=0.9981
+2026-03-15 01:44:20,410 | INFO | VAL    | acc=0.9583  f1=0.9583  prec=0.9588  rec=0.9578  auc=0.9908
+2026-03-15 01:44:20,420 | INFO | TEST   | acc=0.9554  f1=0.9556  prec=0.9529  rec=0.9583  auc=0.9896
+2026-03-15 01:44:20,430 | INFO | MLP saved to E:\final_project\models\ensemble\mlp_fusion.pt
+2026-03-15 01:44:20,440 | INFO | Report saved to E:\final_project\models\ensemble\eval_report.txt
+2026-03-15 01:44:20,440 | INFO |  
+2026-03-15 01:44:20,440 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-15 01:44:20,441 | INFO | ENSEMBLE FINAL RESULTS
+2026-03-15 01:44:20,441 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-15 01:44:20,441 | INFO | Val  F1      : 0.9583
+2026-03-15 01:44:20,442 | INFO | Val  AUC-ROC : 0.9908
+2026-03-15 01:44:20,442 | INFO | Test F1      : 0.9556
+2026-03-15 01:44:20,442 | INFO | Test AUC-ROC : 0.9896
+2026-03-15 01:44:20,442 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-15 01:44:20,442 | INFO | Done!
+2026-03-16 14:03:09,740 | INFO | ============================================================
+2026-03-16 14:03:09,740 | INFO | Ensemble MLP Fusion Head Training
+2026-03-16 14:03:09,740 | INFO | ============================================================
+2026-03-16 14:03:09,756 | INFO | Device: cuda
+2026-03-16 14:03:09,756 | INFO | Loading data ...
+2026-03-16 14:03:10,427 | INFO | Total texts for signal extraction: 91384
+2026-03-16 14:03:10,427 | INFO |  
+2026-03-16 14:03:10,427 | INFO | Step 1/4 - DeBERTa inference ...
+2026-03-16 14:03:10,427 | INFO | Running DeBERTa inference on 91384 texts ...
+2026-03-16 14:54:19,965 | INFO | DeBERTa probs cached to E:\final_project\data\processed\deberta_probs_all.npy
+2026-03-16 14:54:20,008 | INFO |  
+2026-03-16 14:54:20,008 | INFO | Step 2/4 - XGBoost inference ...
+2026-03-16 14:54:20,008 | INFO | Loading cached XGBoost probabilities ...
+2026-03-16 14:54:20,032 | INFO |  
+2026-03-16 14:54:20,032 | INFO | Step 3/4 - Qwen2.5 perplexity scoring ...
+2026-03-16 14:54:20,032 | INFO | Loading cached Qwen2.5 perplexity scores ...
+2026-03-16 14:54:20,054 | INFO |  
+2026-03-16 14:54:20,054 | INFO | Step 4/4 - Calibrating probabilities ...
+2026-03-16 14:54:20,054 | INFO | Calibrating probabilities with isotonic regression ...
+2026-03-16 14:54:20,067 | INFO | Calibration complete.
+2026-03-16 14:54:20,067 | INFO |  
+2026-03-16 14:54:20,067 | INFO | Building signal matrix ...
+2026-03-16 14:54:20,072 | INFO | Signal matrix shape: (91384, 5)
+2026-03-16 14:54:20,072 | INFO | Columns: DeBERTa_prob | XGB_prob | Qwen_ppl | Qwen_burst | XGB_conf
+2026-03-16 14:54:20,072 | INFO |  
+2026-03-16 14:54:20,114 | INFO | Training MLP fusion head for up to 50 epochs ...
+2026-03-16 14:54:26,171 | INFO | Epoch  10 | val_loss=0.1716 | val_f1=0.9434
+2026-03-16 14:54:26,706 | INFO | Early stopping at epoch 11
+2026-03-16 14:54:26,706 | INFO |  
+2026-03-16 14:54:26,706 | INFO | -- Final evaluation --
+2026-03-16 14:54:26,750 | INFO | TRAIN  | acc=0.9808  f1=0.9809  prec=0.9747  rec=0.9872  auc=0.9981
+2026-03-16 14:54:26,760 | INFO | VAL    | acc=0.9583  f1=0.9583  prec=0.9588  rec=0.9578  auc=0.9908
+2026-03-16 14:54:26,764 | INFO | TEST   | acc=0.9554  f1=0.9556  prec=0.9529  rec=0.9583  auc=0.9896
+2026-03-16 14:54:26,774 | INFO | MLP saved to E:\final_project\models\ensemble\mlp_fusion.pt
+2026-03-16 14:54:26,774 | INFO | Calibrators saved to E:\final_project\models\ensemble\calibrators.pkl
+2026-03-16 14:54:26,774 | INFO | Report saved to E:\final_project\models\ensemble\eval_report.txt
+2026-03-16 14:54:26,774 | INFO |  
+2026-03-16 14:54:26,774 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-16 14:54:26,774 | INFO | ENSEMBLE FINAL RESULTS
+2026-03-16 14:54:26,774 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-16 14:54:26,774 | INFO | Val  F1      : 0.9583
+2026-03-16 14:54:26,778 | INFO | Val  AUC-ROC : 0.9908
+2026-03-16 14:54:26,778 | INFO | Test F1      : 0.9556
+2026-03-16 14:54:26,778 | INFO | Test AUC-ROC : 0.9896
+2026-03-16 14:54:26,778 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-16 14:54:26,778 | INFO | Done!
+2026-03-17 00:39:03,387 | INFO | ============================================================
+2026-03-17 00:39:03,407 | INFO | Ensemble MLP Fusion Head Training
+2026-03-17 00:39:03,407 | INFO | ============================================================
+2026-03-17 00:39:03,419 | INFO | Device: cuda
+2026-03-17 00:39:03,419 | INFO | Loading data ...
+2026-03-17 00:39:04,881 | INFO | Total texts for signal extraction: 171460
+2026-03-17 00:39:04,881 | INFO |  
+2026-03-17 00:39:04,881 | INFO | Step 1/4 - DeBERTa inference ...
+2026-03-17 00:39:04,881 | INFO | Running DeBERTa inference on 171460 texts ...
+2026-03-17 02:23:10,896 | INFO | DeBERTa probs cached to E:\final_project\data\processed\deberta_probs_all.npy
+2026-03-17 02:23:10,975 | INFO |  
+2026-03-17 02:23:10,975 | INFO | Step 2/4 - XGBoost inference ...
+2026-03-17 02:23:10,975 | INFO | Running XGBoost inference on 171460 texts ...
+2026-03-17 02:23:11,593 | INFO | Using 38 active XGB features from E:\final_project\models\xgboost\active_features.json
+2026-03-17 02:29:25,244 | INFO | XGBoost probs cached.
+2026-03-17 02:29:25,248 | INFO |  
+2026-03-17 02:29:25,248 | INFO | Step 3/4 - Qwen2.5 perplexity scoring ...
+2026-03-17 02:29:25,248 | INFO | Loading Qwen2.5-1.5B for perplexity scoring ...
+2026-03-17 02:29:25,809 | INFO | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-17 02:29:25,911 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-1.5B/8faed761d45a263340a0528343f099c05c9a4323/config.json "HTTP/1.1 200 OK"
+2026-03-17 02:29:26,190 | INFO | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-17 02:29:26,190 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-17 02:29:26,241 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-1.5B/8faed761d45a263340a0528343f099c05c9a4323/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-17 02:29:26,492 | INFO | HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-17 02:29:26,702 | INFO | HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-17 02:29:27,312 | INFO | HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B "HTTP/1.1 200 OK"
+2026-03-17 02:29:27,515 | INFO | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-17 02:29:27,573 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-1.5B/8faed761d45a263340a0528343f099c05c9a4323/config.json "HTTP/1.1 200 OK"
+2026-03-17 02:29:30,618 | INFO | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-17 02:29:30,768 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-1.5B/8faed761d45a263340a0528343f099c05c9a4323/generation_config.json "HTTP/1.1 200 OK"
+2026-03-17 02:29:30,968 | INFO | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B/resolve/main/custom_generate/generate.py "HTTP/1.1 404 Not Found"
+2026-03-17 02:32:28,366 | INFO | Qwen2.5 scores cached.
+2026-03-17 02:32:28,392 | INFO |  
+2026-03-17 02:32:28,392 | INFO | Step 4/4 - Calibrating probabilities ...
+2026-03-17 02:32:28,392 | INFO | Calibrating probabilities with isotonic regression ...
+2026-03-17 02:32:28,429 | INFO | Calibration complete.
+2026-03-17 02:32:28,429 | INFO |  
+2026-03-17 02:32:28,429 | INFO | Building signal matrix ...
+2026-03-17 02:32:28,438 | INFO | Signal matrix shape: (171460, 5)
+2026-03-17 02:32:28,438 | INFO | Columns: DeBERTa_prob | XGB_prob | Qwen_ppl | Qwen_burst | XGB_conf
+2026-03-17 02:32:28,438 | INFO |  
+2026-03-17 02:32:28,494 | INFO | Training MLP fusion head for up to 50 epochs ...
+2026-03-17 02:32:43,764 | INFO | Epoch  10 | val_loss=0.1690 | val_f1=0.9417
+2026-03-17 02:32:58,443 | INFO | Epoch  20 | val_loss=0.1694 | val_f1=0.9376
+2026-03-17 02:33:12,979 | INFO | Epoch  30 | val_loss=0.1639 | val_f1=0.9416
+2026-03-17 02:33:27,064 | INFO | Epoch  40 | val_loss=0.1634 | val_f1=0.9425
+2026-03-17 02:33:28,478 | INFO | Early stopping at epoch 41
+2026-03-17 02:33:28,507 | INFO |  
+2026-03-17 02:33:28,507 | INFO | -- Final evaluation --
+2026-03-17 02:33:28,579 | INFO | TRAIN  | acc=0.9700  f1=0.9701  prec=0.9671  rec=0.9731  auc=0.9961
+2026-03-17 02:33:28,604 | INFO | VAL    | acc=0.9424  f1=0.9425  prec=0.9409  rec=0.9441  auc=0.9866
+2026-03-17 02:33:28,624 | INFO | TEST   | acc=0.9408  f1=0.9408  prec=0.9407  rec=0.9409  auc=0.9859
+2026-03-17 02:33:28,661 | INFO | MLP saved to E:\final_project\models\ensemble\mlp_fusion.pt
+2026-03-17 02:33:28,661 | INFO | Calibrators saved to E:\final_project\models\ensemble\calibrators.pkl
+2026-03-17 02:33:28,661 | INFO | Report saved to E:\final_project\models\ensemble\eval_report.txt
+2026-03-17 02:33:28,661 | INFO |  
+2026-03-17 02:33:28,661 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-17 02:33:28,661 | INFO | ENSEMBLE FINAL RESULTS
+2026-03-17 02:33:28,661 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-17 02:33:28,661 | INFO | Val  F1      : 0.9425
+2026-03-17 02:33:28,661 | INFO | Val  AUC-ROC : 0.9866
+2026-03-17 02:33:28,661 | INFO | Test F1      : 0.9408
+2026-03-17 02:33:28,661 | INFO | Test AUC-ROC : 0.9859
+2026-03-17 02:33:28,661 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-17 02:33:28,661 | INFO | Done!
+2026-03-17 02:36:18,397 | INFO | ============================================================
+2026-03-17 02:36:18,397 | INFO | Ensemble MLP Fusion Head Training
+2026-03-17 02:36:18,397 | INFO | ============================================================
+2026-03-17 02:36:18,413 | INFO | Device: cuda
+2026-03-17 02:36:18,413 | INFO | Loading data ...
+2026-03-17 02:36:21,461 | INFO | Total texts for signal extraction: 171460
+2026-03-17 02:36:21,461 | INFO |  
+2026-03-17 02:36:21,461 | INFO | Step 1/4 - DeBERTa inference ...
+2026-03-17 02:36:21,461 | INFO | Loading cached DeBERTa probabilities ...
+2026-03-17 02:36:21,461 | INFO |  
+2026-03-17 02:36:21,461 | INFO | Step 2/4 - XGBoost inference ...
+2026-03-17 02:36:21,461 | INFO | Loading cached XGBoost probabilities ...
+2026-03-17 02:36:21,461 | INFO |  
+2026-03-17 02:36:21,461 | INFO | Step 3/4 - Qwen2.5 perplexity scoring ...
+2026-03-17 02:36:21,461 | INFO | Loading Qwen2.5-1.5B for perplexity scoring ...
+2026-03-17 02:36:21,919 | INFO | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-17 02:36:21,919 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-17 02:36:21,974 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-1.5B/8faed761d45a263340a0528343f099c05c9a4323/config.json "HTTP/1.1 200 OK"
+2026-03-17 02:36:22,149 | INFO | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-17 02:36:22,212 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-1.5B/8faed761d45a263340a0528343f099c05c9a4323/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-17 02:36:22,401 | INFO | HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-17 02:36:22,578 | INFO | HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-17 02:36:23,425 | INFO | HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B "HTTP/1.1 200 OK"
+2026-03-17 02:36:23,606 | INFO | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-17 02:36:23,662 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-1.5B/8faed761d45a263340a0528343f099c05c9a4323/config.json "HTTP/1.1 200 OK"
+2026-03-17 02:36:26,904 | INFO | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-17 02:36:26,952 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-1.5B/8faed761d45a263340a0528343f099c05c9a4323/generation_config.json "HTTP/1.1 200 OK"
+2026-03-17 02:36:27,130 | INFO | HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B/resolve/main/custom_generate/generate.py "HTTP/1.1 404 Not Found"
+2026-03-17 02:39:12,396 | INFO | Qwen2.5 scores cached.
+2026-03-17 02:39:12,414 | INFO |  
+2026-03-17 02:39:12,414 | INFO | Step 4/4 - Calibrating probabilities ...
+2026-03-17 02:39:12,414 | INFO | Calibrating probabilities with isotonic regression ...
+2026-03-17 02:39:12,443 | INFO | Calibration complete.
+2026-03-17 02:39:12,443 | INFO |  
+2026-03-17 02:39:12,443 | INFO | Building signal matrix ...
+2026-03-17 02:39:12,455 | INFO | Signal matrix shape: (171460, 5)
+2026-03-17 02:39:12,455 | INFO | Columns: DeBERTa_prob | XGB_prob | Qwen_ppl | Qwen_burst | XGB_conf
+2026-03-17 02:39:12,455 | INFO |  
+2026-03-17 02:39:12,472 | INFO | Training MLP fusion head for up to 50 epochs ...
+2026-03-17 02:39:26,873 | INFO | Epoch  10 | val_loss=0.1690 | val_f1=0.9417
+2026-03-17 02:39:40,961 | INFO | Epoch  20 | val_loss=0.1694 | val_f1=0.9376
+2026-03-17 02:39:54,955 | INFO | Epoch  30 | val_loss=0.1639 | val_f1=0.9416
+2026-03-17 02:40:10,559 | INFO | Epoch  40 | val_loss=0.1634 | val_f1=0.9425
+2026-03-17 02:40:12,109 | INFO | Early stopping at epoch 41
+2026-03-17 02:40:12,148 | INFO |  
+2026-03-17 02:40:12,148 | INFO | -- Final evaluation --
+2026-03-17 02:40:12,228 | INFO | TRAIN  | acc=0.9700  f1=0.9701  prec=0.9671  rec=0.9731  auc=0.9961
+2026-03-17 02:40:12,251 | INFO | VAL    | acc=0.9424  f1=0.9425  prec=0.9409  rec=0.9441  auc=0.9866
+2026-03-17 02:40:12,273 | INFO | TEST   | acc=0.9408  f1=0.9408  prec=0.9407  rec=0.9409  auc=0.9859
+2026-03-17 02:40:12,290 | INFO | MLP saved to E:\final_project\models\ensemble\mlp_fusion.pt
+2026-03-17 02:40:12,291 | INFO | Calibrators saved to E:\final_project\models\ensemble\calibrators.pkl
+2026-03-17 02:40:12,292 | INFO | Report saved to E:\final_project\models\ensemble\eval_report.txt
+2026-03-17 02:40:12,292 | INFO |  
+2026-03-17 02:40:12,292 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-17 02:40:12,293 | INFO | ENSEMBLE FINAL RESULTS
+2026-03-17 02:40:12,293 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-17 02:40:12,293 | INFO | Val  F1      : 0.9425
+2026-03-17 02:40:12,293 | INFO | Val  AUC-ROC : 0.9866
+2026-03-17 02:40:12,293 | INFO | Test F1      : 0.9408
+2026-03-17 02:40:12,294 | INFO | Test AUC-ROC : 0.9859
+2026-03-17 02:40:12,294 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-17 02:40:12,294 | INFO | Done!
+2026-03-17 03:08:56,754 | INFO | ============================================================
+2026-03-17 03:08:56,754 | INFO | Ensemble MLP Fusion Head Training
+2026-03-17 03:08:56,754 | INFO | ============================================================
+2026-03-17 03:08:56,762 | INFO | Device: cuda
+2026-03-17 03:08:56,773 | INFO | Loading data ...
+2026-03-17 03:08:58,438 | INFO | Total texts for signal extraction: 171460
+2026-03-17 03:08:58,438 | INFO |  
+2026-03-17 03:08:58,438 | INFO | Step 1/4 - DeBERTa inference ...
+2026-03-17 03:08:58,438 | INFO | Running DeBERTa inference on 171460 texts ...
+2026-03-17 04:53:07,444 | INFO | DeBERTa probs cached to E:\final_project\data\processed\deberta_probs_all.npy
+2026-03-17 04:53:07,493 | INFO |  
+2026-03-17 04:53:07,493 | INFO | Step 2/4 - XGBoost inference ...
+2026-03-17 04:53:07,493 | INFO | Running XGBoost inference on 171460 texts ...
+2026-03-17 04:53:07,991 | INFO | Using 38 active XGB features from E:\final_project\models\xgboost\active_features.json
+2026-03-17 05:01:04,070 | INFO | XGBoost probs cached.
+2026-03-17 05:01:04,088 | INFO |  
+2026-03-17 05:01:04,088 | INFO | Step 3/3 - Calibrating probabilities ...
+2026-03-17 05:01:04,088 | INFO | Calibrating probabilities with isotonic regression ...
+2026-03-17 05:01:04,124 | INFO | Calibration complete.
+2026-03-17 05:01:04,124 | INFO |  
+2026-03-17 05:01:04,124 | INFO | Building signal matrix ...
+2026-03-17 05:01:04,126 | INFO | Signal matrix shape: (171460, 2)  (DeBERTa_cal | XGB_cal)
+2026-03-17 05:01:04,126 | INFO |  
+2026-03-17 05:01:04,142 | INFO | Training MLP fusion head for up to 50 epochs ...
+2026-03-17 05:01:19,521 | INFO | Epoch  10 | val_loss=0.1664 | val_f1=0.9345
+2026-03-17 05:01:20,881 | INFO | Early stopping at epoch 11
+2026-03-17 05:01:20,881 | INFO |  
+2026-03-17 05:01:20,881 | INFO | -- Final evaluation --
+2026-03-17 05:01:20,950 | INFO | TRAIN  | acc=0.9682  f1=0.9684  prec=0.9632  rec=0.9737  auc=0.9952
+2026-03-17 05:01:20,970 | INFO | VAL    | acc=0.9461  f1=0.9464  prec=0.9406  rec=0.9524  auc=0.9866
+2026-03-17 05:01:20,988 | INFO | TEST   | acc=0.9464  f1=0.9467  prec=0.9412  rec=0.9523  auc=0.9856
+2026-03-17 05:01:20,995 | INFO | MLP saved to E:\final_project\models\ensemble\mlp_fusion.pt
+2026-03-17 05:01:20,996 | INFO | Calibrators saved to E:\final_project\models\ensemble\calibrators.pkl
+2026-03-17 05:01:20,996 | INFO | Report saved to E:\final_project\models\ensemble\eval_report.txt
+2026-03-17 05:01:20,996 | INFO |  
+2026-03-17 05:01:20,996 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-17 05:01:20,997 | INFO | ENSEMBLE FINAL RESULTS
+2026-03-17 05:01:20,997 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-17 05:01:20,997 | INFO | Val  F1      : 0.9464
+2026-03-17 05:01:20,997 | INFO | Val  AUC-ROC : 0.9866
+2026-03-17 05:01:20,997 | INFO | Test F1      : 0.9467
+2026-03-17 05:01:20,997 | INFO | Test AUC-ROC : 0.9856
+2026-03-17 05:01:20,997 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-17 05:01:20,997 | INFO | Done!
+2026-03-17 15:33:58,322 | INFO | ============================================================
+2026-03-17 15:33:58,322 | INFO | Ensemble MLP Fusion Training  (DeBERTa + XGBoost + Binoculars)
+2026-03-17 15:33:58,322 | INFO | ============================================================
+2026-03-17 15:33:58,339 | INFO | Device: cuda
+2026-03-17 15:33:58,339 | INFO | Loading data ...
+2026-03-17 15:33:59,811 | INFO | Total texts: 171460  (train=120022  val=25719  test=25719)
+2026-03-17 15:33:59,811 | INFO |  
+2026-03-17 15:33:59,811 | INFO | Step 1/4 — DeBERTa inference ...
+2026-03-17 15:33:59,811 | INFO | Running DeBERTa inference on 171460 texts ...
+2026-03-17 17:18:49,698 | INFO | DeBERTa probs cached → E:\final_project\data\processed\deberta_probs_all.npy
+2026-03-17 17:18:49,772 | INFO |  
+2026-03-17 17:18:49,772 | INFO | Step 2/4 — XGBoost inference ...
+2026-03-17 17:18:49,782 | INFO | Running XGBoost inference on 171460 texts ...
+2026-03-17 17:18:50,319 | INFO | Using 38 active XGB features
+2026-03-17 17:25:00,976 | INFO | XGBoost probs cached → E:\final_project\data\processed\xgb_probs_all.npy
+2026-03-17 17:25:00,976 | INFO |  
+2026-03-17 17:25:00,992 | INFO | Step 3/4 — Binoculars perplexity scoring ...
+2026-03-17 17:25:00,992 | INFO | Computing Binoculars scores on 171460 texts ...
+2026-03-17 17:25:00,992 | INFO | Loading gpt2-large (observer) + gpt2-xl (scorer) ...
+2026-03-17 17:25:01,643 | INFO | HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-03-17 17:25:01,855 | INFO | HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-17 17:25:02,055 | INFO | HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-03-17 17:25:02,240 | INFO | HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-17 17:25:02,443 | INFO | HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-03-17 17:25:02,616 | INFO | HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-17 17:25:02,781 | INFO | Loading gpt2-large ...
+2026-03-17 17:25:02,966 | INFO | HTTP Request: HEAD https://huggingface.co/gpt2-large/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-03-17 17:25:04,473 | INFO | HTTP Request: HEAD https://huggingface.co/gpt2-large/resolve/main/generation_config.json "HTTP/1.1 200 OK"
+2026-03-17 17:25:04,806 | INFO | Loading gpt2-xl ...
+2026-03-17 17:25:04,982 | INFO | HTTP Request: HEAD https://huggingface.co/gpt2-xl/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-03-17 17:25:05,195 | INFO | HTTP Request: HEAD https://huggingface.co/gpt2-xl/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-03-17 17:25:05,414 | INFO | HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2-xl/xet-read-token/15ea56dee5df4983c59b2538573817e1667135e2 "HTTP/1.1 200 OK"
+2026-03-17 17:39:07,226 | INFO | HTTP Request: HEAD https://huggingface.co/gpt2-xl/resolve/main/generation_config.json "HTTP/1.1 200 OK"
+2026-03-17 17:39:07,416 | INFO | HTTP Request: GET https://huggingface.co/gpt2-xl/resolve/main/generation_config.json "HTTP/1.1 200 OK"
+2026-03-17 17:39:08,487 | INFO | VRAM after loading: 4.74 GB
+2026-03-17 21:04:43,301 | INFO | Freed GPT-2 models from VRAM.
+2026-03-17 21:04:43,321 | INFO | Binoculars — mean=1.033  std=0.026  min=0.709  max=1.597
+2026-03-17 21:04:43,322 | INFO | Binoculars scores cached → E:\final_project\data\processed\binoculars_all.npy
+2026-03-17 21:04:43,357 | INFO |  
+2026-03-17 21:04:43,357 | INFO | Step 4/4 — Calibrating probabilities ...
+2026-03-17 21:04:43,359 | INFO | Calibrating probabilities with isotonic regression ...
+2026-03-17 21:04:43,395 | INFO | Calibration complete.
+2026-03-17 21:04:43,405 | INFO |  
+2026-03-17 21:04:43,405 | INFO | Building signal matrix ...
+2026-03-17 21:04:43,415 | INFO | Signal matrix: (171460, 3)  (DeBERTa_cal | XGB_cal | Binoculars_ai)
+2026-03-17 21:04:43,415 | INFO |  
+2026-03-17 21:04:43,522 | INFO | Training MLP fusion head (3 inputs) for up to 50 epochs ...
+2026-03-17 21:04:55,748 | INFO | Epoch  10 | val_loss=0.1664 | val_f1=0.9364
+2026-03-17 21:05:07,299 | INFO | Epoch  20 | val_loss=0.1612 | val_f1=0.9391
+2026-03-17 21:05:18,226 | INFO | Epoch  30 | val_loss=0.1649 | val_f1=0.9390
+2026-03-17 21:05:29,348 | INFO | Epoch  40 | val_loss=0.1585 | val_f1=0.9410
+2026-03-17 21:05:40,587 | INFO | Epoch  50 | val_loss=0.1660 | val_f1=0.9391
+2026-03-17 21:05:40,598 | INFO |  
+2026-03-17 21:05:40,598 | INFO | -- Final evaluation --
+2026-03-17 21:05:40,660 | INFO | TRAIN  | acc=0.9712  f1=0.9713  prec=0.9671  rec=0.9756  auc=0.9964
+2026-03-17 21:05:40,677 | INFO | VAL    | acc=0.9434  f1=0.9437  prec=0.9389  rec=0.9486  auc=0.9874
+2026-03-17 21:05:40,693 | INFO | TEST   | acc=0.9433  f1=0.9435  prec=0.9393  rec=0.9477  auc=0.9868
+2026-03-17 21:05:40,715 | INFO | MLP saved → E:\final_project\models\ensemble\mlp_fusion.pt
+2026-03-17 21:05:40,717 | INFO | Calibrators saved → E:\final_project\models\ensemble\calibrators.pkl
+2026-03-17 21:05:40,717 | INFO | Report saved → E:\final_project\models\ensemble\eval_report.txt
+2026-03-17 21:05:40,717 | INFO |  
+2026-03-17 21:05:40,717 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-17 21:05:40,717 | INFO | ENSEMBLE FINAL RESULTS
+2026-03-17 21:05:40,717 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-17 21:05:40,719 | INFO | Val  F1      : 0.9437
+2026-03-17 21:05:40,719 | INFO | Val  AUC-ROC : 0.9874
+2026-03-17 21:05:40,719 | INFO | Test F1      : 0.9435
+2026-03-17 21:05:40,719 | INFO | Test AUC-ROC : 0.9868
+2026-03-17 21:05:40,719 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-17 21:05:40,719 | INFO | Done!
+2026-03-17 23:24:10,377 | INFO | ============================================================
+2026-03-17 23:24:10,377 | INFO | Ensemble MLP Fusion Training  (DeBERTa + XGBoost + Binoculars)
+2026-03-17 23:24:10,377 | INFO | ============================================================
+2026-03-17 23:24:10,393 | INFO | Device: cuda
+2026-03-17 23:24:10,393 | INFO | Loading data ...
+2026-03-17 23:24:11,885 | INFO | Total texts: 171460  (train=120022  val=25719  test=25719)
+2026-03-17 23:24:11,885 | INFO |  
+2026-03-17 23:24:11,885 | INFO | Step 1/4 — DeBERTa inference ...
+2026-03-17 23:24:11,885 | INFO | Loading cached DeBERTa probabilities ...
+2026-03-17 23:24:11,885 | INFO |  
+2026-03-17 23:24:11,885 | INFO | Step 2/4 — XGBoost inference ...
+2026-03-17 23:24:11,885 | INFO | Loading cached XGBoost probabilities ...
+2026-03-17 23:24:11,885 | INFO |  
+2026-03-17 23:24:11,885 | INFO | Step 3/5 — Binoculars perplexity scoring ...
+2026-03-17 23:24:11,885 | INFO | Loading cached Binoculars scores ...
+2026-03-17 23:24:11,900 | INFO |   shape=(171460,)  mean=1.033  std=0.026
+2026-03-17 23:24:11,900 | INFO |  
+2026-03-17 23:24:11,900 | INFO | Step 4/5 — Genre classification ...
+2026-03-17 23:24:11,900 | INFO | (DistilBERT — encyclopedic/academic/informal/general)
+2026-03-17 23:24:11,900 | INFO | Computing genre scores on 171460 texts ...
+2026-03-17 23:24:11,907 | INFO | Loading genre classifier from E:\final_project\models\genre\best_model ...
+2026-03-17 23:24:12,508 | INFO | Genre model loaded (66,956,548 params, device=cuda)
+2026-03-17 23:27:45,742 | INFO | Freed genre model from VRAM.
+2026-03-17 23:27:45,743 | INFO | Genre scores — mean=0.411  std=0.487  min=0.000  max=1.000
+2026-03-17 23:27:45,744 | INFO | Genre scores cached → E:\final_project\data\processed\genre_all.npy
+2026-03-17 23:27:45,747 | INFO |  
+2026-03-17 23:27:45,747 | INFO | Step 5/5 — Calibrating probabilities ...
+2026-03-17 23:27:45,748 | INFO | Calibrating probabilities with isotonic regression ...
+2026-03-17 23:27:45,772 | INFO | Calibration complete.
+2026-03-17 23:27:45,772 | INFO |  
+2026-03-17 23:27:45,772 | INFO | Building signal matrix ...
+2026-03-17 23:27:45,784 | INFO | Signal matrix: (171460, 4)  (DeBERTa_cal | XGB_cal | Binoculars_ai | Genre_formality)
+2026-03-17 23:27:45,784 | INFO |  
+2026-03-17 23:27:45,784 | INFO | Training MLP fusion head (4 inputs) for up to 50 epochs ...
+2026-03-17 23:27:57,505 | INFO | Epoch  10 | val_loss=0.1648 | val_f1=0.9392
+2026-03-17 23:28:09,119 | INFO | Epoch  20 | val_loss=0.1609 | val_f1=0.9413
+2026-03-17 23:28:15,861 | INFO | Early stopping at epoch 26
+2026-03-17 23:28:15,861 | INFO |  
+2026-03-17 23:28:15,861 | INFO | -- Final evaluation --
+2026-03-17 23:28:15,931 | INFO | TRAIN  | acc=0.9720  f1=0.9720  prec=0.9730  rec=0.9710  auc=0.9966
+2026-03-17 23:28:15,947 | INFO | VAL    | acc=0.9413  f1=0.9411  prec=0.9448  rec=0.9373  auc=0.9865
+2026-03-17 23:28:15,965 | INFO | TEST   | acc=0.9390  f1=0.9387  prec=0.9429  rec=0.9344  auc=0.9860
+2026-03-17 23:28:15,968 | INFO | MLP saved → E:\final_project\models\ensemble\mlp_fusion.pt
+2026-03-17 23:28:15,969 | INFO | Calibrators saved → E:\final_project\models\ensemble\calibrators.pkl
+2026-03-17 23:28:15,970 | INFO | Report saved → E:\final_project\models\ensemble\eval_report.txt
+2026-03-17 23:28:15,970 | INFO |  
+2026-03-17 23:28:15,970 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-17 23:28:15,970 | INFO | ENSEMBLE FINAL RESULTS
+2026-03-17 23:28:15,970 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-17 23:28:15,970 | INFO | Val  F1      : 0.9411
+2026-03-17 23:28:15,970 | INFO | Val  AUC-ROC : 0.9865
+2026-03-17 23:28:15,971 | INFO | Test F1      : 0.9387
+2026-03-17 23:28:15,971 | INFO | Test AUC-ROC : 0.9860
+2026-03-17 23:28:15,971 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-17 23:28:15,971 | INFO | Done!
+2026-03-19 17:12:19,566 | INFO | ============================================================
+2026-03-19 17:12:19,576 | INFO | Ensemble MLP Fusion Training  (DeBERTa + XGBoost + Binoculars)
+2026-03-19 17:12:19,576 | INFO | ============================================================
+2026-03-19 17:12:19,587 | INFO | Device: cuda
+2026-03-19 17:12:19,588 | INFO | Loading data ...
+2026-03-19 17:12:20,737 | INFO | Total texts: 171356  (train=119949  val=25703  test=25704)
+2026-03-19 17:12:20,737 | INFO |  
+2026-03-19 17:12:20,737 | INFO | Step 1/4 — DeBERTa inference ...
+2026-03-19 17:12:20,737 | INFO | Running DeBERTa inference on 171356 texts ...
+2026-03-19 18:47:08,914 | INFO | DeBERTa probs cached → E:\final_project\data\processed\deberta_probs_all.npy
+2026-03-19 18:47:09,000 | INFO |  
+2026-03-19 18:47:09,000 | INFO | Step 2/4 — XGBoost inference ...
+2026-03-19 18:47:09,000 | INFO | Running XGBoost inference on 171356 texts ...
+2026-03-19 18:47:09,535 | INFO | Using 35 active XGB features
+2026-03-19 18:52:36,023 | INFO | XGBoost probs cached → E:\final_project\data\processed\xgb_probs_all.npy
+2026-03-19 18:52:36,034 | INFO |  
+2026-03-19 18:52:36,034 | INFO | Step 3/5 — Binoculars perplexity scoring ...
+2026-03-19 18:52:36,034 | INFO | Computing Binoculars scores on 171356 texts ...
+2026-03-19 18:52:36,034 | INFO | Loading gpt2-large (observer) + gpt2-xl (scorer) ...
+2026-03-19 18:52:36,622 | INFO | HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-03-19 18:52:36,849 | INFO | HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-19 18:52:37,048 | INFO | HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-03-19 18:52:37,230 | INFO | HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-19 18:52:37,415 | INFO | HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-03-19 18:52:37,618 | INFO | HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-19 18:52:37,770 | INFO | Loading gpt2-large ...
+2026-03-19 18:52:37,951 | INFO | HTTP Request: HEAD https://huggingface.co/gpt2-large/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-03-19 18:52:39,360 | INFO | HTTP Request: HEAD https://huggingface.co/gpt2-large/resolve/main/generation_config.json "HTTP/1.1 200 OK"
+2026-03-19 18:52:39,636 | INFO | Loading gpt2-xl ...
+2026-03-19 18:52:39,831 | INFO | HTTP Request: HEAD https://huggingface.co/gpt2-xl/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-03-19 18:52:39,831 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-19 18:52:43,952 | INFO | HTTP Request: HEAD https://huggingface.co/gpt2-xl/resolve/main/generation_config.json "HTTP/1.1 200 OK"
+2026-03-19 18:52:44,628 | INFO | VRAM after loading: 4.74 GB
+2026-03-19 21:58:10,515 | INFO | Freed GPT-2 models from VRAM.
+2026-03-19 21:58:10,526 | INFO | Binoculars — mean=1.036  std=0.029  min=0.709  max=1.808
+2026-03-19 21:58:10,534 | INFO | Binoculars scores cached → E:\final_project\data\processed\binoculars_all.npy
+2026-03-19 21:58:10,549 | INFO |  
+2026-03-19 21:58:10,550 | INFO | Step 4/5 — Genre classification ...
+2026-03-19 21:58:10,550 | INFO | (DistilBERT — encyclopedic/academic/informal/general)
+2026-03-19 21:58:10,551 | INFO | Computing genre scores on 171356 texts ...
+2026-03-19 21:58:10,560 | INFO | Loading genre classifier from E:\final_project\models\genre\best_model ...
+2026-03-19 21:58:10,944 | INFO | Genre model loaded (66,956,548 params, device=cuda)
+2026-03-19 22:01:39,794 | INFO | Freed genre model from VRAM.
+2026-03-19 22:01:39,795 | INFO | Genre scores — mean=0.679  std=0.463  min=0.000  max=1.000
+2026-03-19 22:01:39,796 | INFO | Genre scores cached → E:\final_project\data\processed\genre_all.npy
+2026-03-19 22:01:39,796 | INFO |  
+2026-03-19 22:01:39,796 | INFO | Step 5/5 — Calibrating probabilities ...
+2026-03-19 22:01:39,796 | INFO | Calibrating probabilities with isotonic regression ...
+2026-03-19 22:01:39,840 | INFO | Calibration complete.
+2026-03-19 22:01:39,840 | INFO |  
+2026-03-19 22:01:39,840 | INFO | Building signal matrix ...
+2026-03-19 22:01:39,850 | INFO | Signal matrix: (171356, 4)  (DeBERTa_cal | XGB_cal | Binoculars_ai | Genre_formality)
+2026-03-19 22:01:39,861 | INFO |  
+2026-03-19 22:01:40,051 | INFO | Training MLP fusion head (4 inputs) for up to 50 epochs ...
+2026-03-19 22:01:51,187 | INFO | Epoch  10 | val_loss=0.1364 | val_f1=0.9530
+2026-03-19 22:02:02,573 | INFO | Epoch  20 | val_loss=0.1348 | val_f1=0.9536
+2026-03-19 22:02:13,847 | INFO | Epoch  30 | val_loss=0.1323 | val_f1=0.9530
+2026-03-19 22:02:17,835 | INFO | Early stopping at epoch 34
+2026-03-19 22:02:17,835 | INFO |  
+2026-03-19 22:02:17,835 | INFO | -- Final evaluation --
+2026-03-19 22:02:17,898 | INFO | TRAIN  | acc=0.9699  f1=0.9698  prec=0.9718  rec=0.9678  auc=0.9957
+2026-03-19 22:02:17,919 | INFO | VAL    | acc=0.9541  f1=0.9538  prec=0.9600  rec=0.9476  auc=0.9894
+2026-03-19 22:02:17,934 | INFO | TEST   | acc=0.9516  f1=0.9514  prec=0.9541  rec=0.9488  auc=0.9889
+2026-03-19 22:02:17,965 | INFO | MLP saved → E:\final_project\models\ensemble\mlp_fusion.pt
+2026-03-19 22:02:17,967 | INFO | Calibrators saved → E:\final_project\models\ensemble\calibrators.pkl
+2026-03-19 22:02:17,967 | INFO | Report saved → E:\final_project\models\ensemble\eval_report.txt
+2026-03-19 22:02:17,967 | INFO |  
+2026-03-19 22:02:17,968 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-19 22:02:17,968 | INFO | ENSEMBLE FINAL RESULTS
+2026-03-19 22:02:17,968 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-19 22:02:17,968 | INFO | Val  F1      : 0.9538
+2026-03-19 22:02:17,968 | INFO | Val  AUC-ROC : 0.9894
+2026-03-19 22:02:17,968 | INFO | Test F1      : 0.9514
+2026-03-19 22:02:17,968 | INFO | Test AUC-ROC : 0.9889
+2026-03-19 22:02:17,968 | INFO | = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+2026-03-19 22:02:17,968 | INFO | Done!
